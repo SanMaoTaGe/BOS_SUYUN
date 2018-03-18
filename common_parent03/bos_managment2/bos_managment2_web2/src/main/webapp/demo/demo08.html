@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!--  vue.js -->
+<link rel="stylesheet" type="text/css"
+	href="../js/easyui/themes/default/easyui.css">
+<link rel="stylesheet" href="../js/ztree/zTreeStyle.css" type="text/css">
+<link rel="stylesheet" type="text/css"
+	href="../js/easyui/themes/icon.css">
+<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="../js/easyui/jquery.easyui.min.js"></script>
+<script type="text/javascript" src="../js/ztree/jquery.ztree.all-3.5.js"></script>
+<!-- 
+	给节点指定class就可以使用EasyUI提供的控件
+	类别的格式:easyui-控件的名字
+	data-options:指定控件的属性
+	title :标题
+	iconCls:指定小图标,文件定义在js/easyui/themes/icon.css
+	
+	
+	调用控件的方法: $('#tt').控件的名字(方法名,[参数可有可无])
+	
+ -->
+
+<script type="text/javascript">
+	function addTabs() {
+		// 判断要添加的选项卡是否存在
+		var result = $('#tt').tabs("exists", "新选项卡面板")
+		if (result) {
+			// 有,选中
+			$('#tt').tabs("select", "新选项卡面板")
+		} else {
+			// 没有,添加
+			$('#tt').tabs('add', {
+				title : '新选项卡面板',//选项卡标题
+				selected : true
+			//是否被选中
+			});
+		}
+
+	}
+</script>
+<script type="text/javascript">
+	// 创建ztree的步骤
+	// 1.创建ul节点,class="ztree"
+	//2.在入口函数中,加载初始化方法
+	// 入口函数,页面加载完成后会自动调用的函数
+	$(function() {
+		// 参数1: 在那个节点加载树
+		// 参数2: 属性配置
+		// 参数3: 节点数据
+		var setting = {
+			data : {
+				simpleData : {
+					enable : true
+				}
+			},
+			callback : {
+				onClick : function(event, treeId, treeNode) {
+
+					var pId = treeNode.pId
+					if (pId != null) {
+						// treeNode json对象
+						// 判断要添加的选项卡是否存在
+						var result = $('#tt').tabs("exists", treeNode.name)
+						if (result) {
+							// 有,选中
+							$('#tt').tabs("select", treeNode.name)
+						} else {
+							// 没有,添加
+							$('#tt').tabs('add', {
+								title : treeNode.name,//选项卡标题
+								selected : true,
+								content:'<iframe width="100%" height="100%" frameborder="0" src="../'+treeNode.page+'"></iframe>'
+							//是否被选中
+							});
+						}
+					}
+				}
+			}
+
+		};
+		/* 
+		id:唯一标识
+		pId:父节点的标识,如果是0,根节点
+		 */
+
+		$.get("../data/menu.json", function(data) {
+			$.fn.zTree.init($("#treeDemo"), setting, data);
+		})
+
+	})
+</script>
+</head>
+<body class="easyui-layout">
+
+
+
+	<div data-options="region:'north'" style="height: 50px"></div>
+	<div data-options="region:'west'" title="West" style="width: 200px;">
+		<div class="easyui-accordion" data-options="fit:true">
+			<div title="面板1">
+				<a id="btn" href="#" class="easyui-linkbutton" onclick="addTabs()"
+					data-options="iconCls:'icon-search'">添加选项卡</a>
+			</div>
+			<div title="面板2" data-options="selected:true">
+				<ul id="treeDemo" class="ztree"></ul>
+			</div>
+			<div title="面板3">面板3</div>
+
+		</div>
+	</div>
+	<div
+		data-options="region:'center',title:'Main Title',iconCls:'icon-ok'">
+		<div id="tt" class="easyui-tabs" data-options="fit:true">
+			
+
+		</div>
+	</div>
+
+
+</body>
+</html>

@@ -2,6 +2,7 @@ package com.vincent.bos.web.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import net.sf.json.JsonConfig;
 import org.apache.struts2.ServletActionContext;
@@ -23,7 +24,7 @@ import java.util.Map;
 
 public class CommonAction<T> extends ActionSupport implements ModelDriven<T> {
 
- private T model;
+ private T model ;
  private Class<T> clazz;
 
  public CommonAction(Class<T> clazz) {
@@ -36,7 +37,6 @@ public class CommonAction<T> extends ActionSupport implements ModelDriven<T> {
   }
   this.clazz = clazz;
  }
-
  protected int page;
  protected int rows;
 
@@ -75,5 +75,19 @@ public class CommonAction<T> extends ActionSupport implements ModelDriven<T> {
   response.getWriter().write(json);
 
  }
+ public void listToJson(List list, JsonConfig jsonConfig)
+  throws IOException {
+  String json;
+
+  if (jsonConfig != null) {
+   json = JSONArray.fromObject(list, jsonConfig).toString();
+  } else {
+   json = JSONArray.fromObject(list).toString();
+  }
+  HttpServletResponse response = ServletActionContext.getResponse();
+  response.setContentType("application/json;charset=UTF-8");
+  response.getWriter().write(json);
+ }
+
 
 }

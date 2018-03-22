@@ -10,6 +10,9 @@
     <modules>
         <module>bos_managment2</module>
         <module>vincentUtils</module>
+        <module>crm3</module>
+        <module>crm4</module>
+
     </modules>
 
     <name>Maven</name>

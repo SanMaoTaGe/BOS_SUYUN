@@ -119,6 +119,7 @@ public class CourierAction extends CommonAction<Courier> {
 
     //如果没有输入条件
     if (list.size() == 0) {
+
      return null;
     }
     // 构造数组-->将list集合转为数组
@@ -137,11 +138,34 @@ public class CourierAction extends CommonAction<Courier> {
 
   List<Courier> list = pageBean.getContent();
 
-
   JsonConfig jsonConfig = new JsonConfig();
   jsonConfig.setExcludes(new String[]{"fixedAreas", "takeTime"});
 
   pageBeanToJson(pageBean, jsonConfig);
+
+  return NONE;
+ }
+
+ @Action(value = "courierAction_findCourierWorking")
+ public String findCourierWorking() throws IOException {
+
+  Specification<Courier> specification = new Specification<Courier>() {
+   @Override
+   public Predicate toPredicate(Root<Courier> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
+
+    Predicate deltag = cb.isNull(root.get("deltag").as(Character.class));
+    return deltag;
+   }
+  };
+  Page<Courier> pageBean = courierService.findAll(specification, null);
+
+  List<Courier> list = pageBean.getContent();
+
+  JsonConfig jsonConfig = new JsonConfig();
+
+  jsonConfig.setExcludes(new String[]{"fixedAreas","takeTime" });
+
+  listToJson(list,jsonConfig);
 
   return NONE;
  }

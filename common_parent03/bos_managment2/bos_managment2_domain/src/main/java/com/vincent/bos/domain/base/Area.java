@@ -101,6 +101,9 @@ public class Area {
         this.subareas = subareas;
     }
 
+    public String  getName(){
+     return province+city+district;}
+
     @Override
     public String toString() {
         return "Area [id=" + id + ", province=" + province + ", city=" + city

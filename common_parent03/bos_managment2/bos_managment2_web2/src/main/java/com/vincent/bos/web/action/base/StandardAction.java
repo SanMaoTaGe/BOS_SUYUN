@@ -1,14 +1,9 @@
 package com.vincent.bos.web.action.base;
 
-import com.opensymphony.xwork2.ActionSupport;
-import com.opensymphony.xwork2.ModelDriven;
 import com.vincent.bos.domain.base.Standard;
 import com.vincent.bos.service.base.StandardService;
 import com.vincent.bos.web.action.CommonAction;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 import net.sf.json.JsonConfig;
-import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Namespace;
 import org.apache.struts2.convention.annotation.ParentPackage;
@@ -20,11 +15,7 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 /**
  * @author Vincent
@@ -36,7 +27,7 @@ import java.util.Map;
 @Scope("prototype")
 @Namespace("/")
 @ParentPackage("struts-default")
-public class StandardAction extends CommonAction<Standard>  {
+public class StandardAction extends CommonAction<Standard> {
 
 
  @Autowired
@@ -51,7 +42,7 @@ public class StandardAction extends CommonAction<Standard>  {
  @Action("standard_findAll")
  public String findAll() throws IOException {
   Page<Standard> pageBean = standardService.findAll(null);
-  pageBeanToJson(pageBean,new JsonConfig());
+  pageBeanToJson(pageBean, new JsonConfig());
   return NONE;
  }
 
@@ -65,7 +56,7 @@ public class StandardAction extends CommonAction<Standard>  {
   Pageable pageable = new PageRequest(page - 1, rows);
   Page<Standard> pageBean = standardService.findAll(pageable);
 
-  pageBeanToJson(pageBean,null);
+  pageBeanToJson(pageBean, null);
 
   return NONE;
  }

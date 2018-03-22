@@ -12,6 +12,7 @@
         <module>vincentUtils</module>
         <module>crm3</module>
         <module>crm4</module>
+        <module>portal</module>
 
     </modules>
 

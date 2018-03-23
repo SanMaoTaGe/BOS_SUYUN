@@ -37,4 +37,18 @@ public interface CustomerService {
  @POST
 void save(Customer customer);
 
+ @Path("/active")
+ @PUT
+ void active(@QueryParam("telephone") String telephone);
+
+ @Path("/isActived")
+ @GET
+ Customer isActived(@QueryParam("telephone") String telephone);
+
+ @Path("/login")
+ @GET
+ Customer login(
+  @QueryParam("telephone") String telephone,
+  @QueryParam("password") String password);
+
 }

@@ -10,7 +10,7 @@
     <modules>
         <module>bos_managment2</module>
         <module>vincentUtils</module>
-        <module>crm3</module>
+
         <module>crm4</module>
         <module>portal</module>
 
@@ -279,7 +279,7 @@
         <dependency>
             <groupId>javax.mail</groupId>
             <artifactId>mail</artifactId>
-            <version>1.4</version>
+            <version>1.4.7</version>
         </dependency>
         <dependency>
             <groupId>redis.clients</groupId>

@@ -68,5 +68,22 @@ public class CustomerServiceImpl implements CustomerService {
   customerRepository.save(customer);
  }
 
+ @Override
+ public void active(String telephone) {
+  System.out.println("active-------------customerServiceImpl-----telephone---\n"+telephone);
+
+  customerRepository.active(telephone);
+ }
+
+ @Override
+ public Customer isActived(String telephone) {
+  return customerRepository.findByTelephone(telephone);
+ }
+
+ @Override
+ public Customer login(String telephone, String password) {
+  return customerRepository.findByTelephoneAndPassword(telephone,password);
+ }
+
 
 }

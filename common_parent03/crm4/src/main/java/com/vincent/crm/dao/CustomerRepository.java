@@ -12,12 +12,10 @@ import java.util.List;
  * @Description:
  * @create 2018-03-19 14:52
  */
-public interface CustomerRepository extends JpaRepository<Customer,Long> {
+public interface CustomerRepository extends JpaRepository<Customer, Long> {
  List<Customer> findByFixedAreaIdIsNull();
 
  List<Customer> findByFixedAreaId(String fixedAreaId);
-
-
 
 
  @Query("update Customer set fixedAreaId=null where fixedAreaId=?")
@@ -27,4 +25,13 @@ public interface CustomerRepository extends JpaRepository<Customer,Long> {
  @Query("update Customer set fixedAreaId=? where id=?")
  @Modifying
  void bindCustomer(String fixedAreaId, Long customerId);
+
+ @Query("update Customer set type = 1 where telephone = ?")
+ @Modifying
+ void active(String telephone);
+
+
+ Customer findByTelephoneAndPassword(String telephone, String password);
+
+ Customer findByTelephone(String telephone);
 }

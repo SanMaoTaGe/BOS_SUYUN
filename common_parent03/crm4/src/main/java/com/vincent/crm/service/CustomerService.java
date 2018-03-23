@@ -33,7 +33,8 @@ public interface CustomerService {
  void assignCustomersToFixedArea(@QueryParam("fixedAreaId") String fixedAreaId,
                                  @QueryParam("customerIds") Long[] customerIds);
 
-
-
+ @Path("/save")
+ @POST
+void save(Customer customer);
 
 }

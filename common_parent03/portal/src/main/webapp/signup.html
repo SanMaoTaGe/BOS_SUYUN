@@ -55,11 +55,23 @@
 											var nums = 60;
 											var btn;
 											function sendCode(thisBtn) {
+                                                    var tel=$("#telephone").val();
+                                                    var reg=new  RegExp("^1[3456789]\\d{9}$");
+
+                                                    if(reg.test(tel)){
+                                                        //发送短信
+                                                        $.post("customerAction_sendSMS.action",
+                                                            "telephone=" + tel);
+                                                    }else{
+                                                        alert("手机号码格式有误,请再次确认")
+                                                    }
 												btn = thisBtn;
 												btn.disabled = true; //将按钮置为不可点击
 												btn.value = nums + '秒后重新获取';
 												clock = setInterval(doLoop, 1000); //一秒执行一次
 											}
+
+
 											function doLoop() {
 												nums--;
 												if (nums > 0) {

@@ -62,5 +62,11 @@ public class CustomerServiceImpl implements CustomerService {
 
  }
 
+ @Override
+ public void save(Customer customer) {
+  System.out.println("save customer------------------\n"+customer);
+  customerRepository.save(customer);
+ }
+
 
 }

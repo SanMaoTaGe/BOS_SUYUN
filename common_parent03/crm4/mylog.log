@@ -1,0 +1,1061 @@
+15:57:16,852  INFO ContextLoader:307 - Root WebApplicationContext: initialization started
+15:57:16,953 DEBUG StandardServletEnvironment:109 - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+15:57:16,953 DEBUG StandardServletEnvironment:109 - Adding [servletContextInitParams] PropertySource with lowest search precedence
+15:57:16,960 DEBUG StandardServletEnvironment:109 - Adding [jndiProperties] PropertySource with lowest search precedence
+15:57:16,960 DEBUG StandardServletEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+15:57:16,962 DEBUG StandardServletEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:57:16,962 DEBUG StandardServletEnvironment:127 - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+15:57:16,967 DEBUG StandardServletEnvironment:174 - Replacing [servletContextInitParams] PropertySource with [servletContextInitParams]
+15:57:16,970  INFO XmlWebApplicationContext:578 - Refreshing Root WebApplicationContext: startup date [Fri Mar 23 15:57:16 CST 2018]; root of context hierarchy
+15:57:17,016 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+15:57:17,016 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:57:17,017 DEBUG StandardEnvironment:127 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+15:57:17,025  INFO XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+15:57:17,029 DEBUG DefaultDocumentLoader:73 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+15:57:17,060 DEBUG PluggableSchemaResolver:141 - Loading schema mappings from [META-INF/spring.schemas]
+15:57:17,068 DEBUG PluggableSchemaResolver:147 - Loaded schema mappings: {http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.w3.org/2006/07/ws-policy.xsd=schemas/ws-policy-200607.xsd, http://cxf.apache.org/schemas/jaxws.xsd=schemas/jaxws.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://cxf.apache.org/schemas/policy.xsd=schemas/policy.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.5.xsd=org/springframework/data/repository/config/spring-repository-1.5.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://cxf.apache.org/schemas/core.xsd=schemas/core.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.0.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://cxf.apache.org/schemas/jaxrs-common.xsd=schemas/jaxrs-common.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/jms/spring-jms.xsd=org/springframework/jms/config/spring-jms-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://cxf.apache.org/schemas/jaxrs-client.xsd=schemas/jaxrs-client.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://cxf.apache.org/schemas/configuration/parameterized-types.xsd=schemas/configuration/parameterized-types.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.8.xsd=org/springframework/data/repository/config/spring-repository-1.8.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.w3.org/2001/xml.xsd=schemas/xml.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.3.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://schemas.xmlsoap.org/ws/2004/09/policy/ws-policy.xsd=schemas/ws-policy-200409.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://cxf.apache.org/schemas/configuration/security.xsd=schemas/configuration/security.xsd, http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd=schemas/oasis-200401-wss-wssecurity-secext-1.0.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://cxf.apache.org/schemas/configuration/soap.xsd=schemas/configuration/soap.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://schemas.xmlsoap.org/ws/2004/08/addressing=schemas/wsdl/addressing.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.4.xsd=org/springframework/data/repository/config/spring-repository-1.4.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/redis/spring-redis.xsd=org/springframework/data/redis/config/spring-redis-1.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository.xsd=org/springframework/data/repository/config/spring-repository-1.11.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.8.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://activemq.org/config/1.0/1.0.xsd=activemq.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://cxf.apache.org/schemas/configuration/cxf-beans.xsd=schemas/configuration/cxf-beans.xsd, http://www.springframework.org/schema/jms/spring-jms-3.2.xsd=org/springframework/jms/config/spring-jms-3.2.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/jms/spring-jms-4.2.xsd=org/springframework/jms/config/spring-jms-4.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.w3.org/2007/02/ws-policy.xsd=schemas/ws-policy-200702.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.0.xsd=org/springframework/data/repository/config/spring-repository-1.0.xsd, http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd=schemas/xmldsig-core-schema.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/redis/spring-redis-1.0.xsd=org/springframework/data/redis/config/spring-redis-1.0.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.7.xsd=org/springframework/data/repository/config/spring-repository-1.7.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-4.2.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.2.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.2.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://cxf.apache.org/configuration/parameterized-types=schemas/configuration/parameterized-types.xsd, http://cxf.apache.org/schemas/simple.xsd=schemas/simple.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://activemq.org/config/1.0=activemq.xsd, http://www.springframework.org/schema/jms/spring-jms-2.5.xsd=org/springframework/jms/config/spring-jms-2.5.xsd, http://cxf.apache.org/schemas/configuration/http-conf.xsd=schemas/configuration/http-conf.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://schemas.xmlsoap.org/wsdl/http/=schemas/wsdl/http.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.11.xsd=org/springframework/data/repository/config/spring-repository-1.11.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://cxf.apache.org/schemas/ws/addressing.xsd=schemas/ws-addr-conf.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms-3.1.xsd=org/springframework/jms/config/spring-jms-3.1.xsd, http://schemas.xmlsoap.org/wsdl/2003-02-11.xsd=schemas/wsdl/wsdl.xsd, http://www.springframework.org/schema/jms/spring-jms-4.1.xsd=org/springframework/jms/config/spring-jms-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://cxf.apache.org/schemas/jaxrs.xsd=schemas/jaxrs.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://activemq.apache.org/schema/core/activemq-core.xsd=activemq.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.6.xsd=org/springframework/data/repository/config/spring-repository-1.6.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.1.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://cxf.apache.org/schemas/wsdl/http-conf.xsd=schemas/wsdl/http-conf.xsd, http://www.springframework.org/schema/data/jpa/spring-jpa-1.8.xsd=org/springframework/data/jpa/repository/config/spring-jpa-1.8.xsd, http://activemq.apache.org/schema/core=activemq.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd=schemas/oasis-200401-wss-wssecurity-utility-1.0.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://schemas.xmlsoap.org/wsdl/=schemas/wsdl/wsdl.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jms/spring-jms-3.0.xsd=org/springframework/jms/config/spring-jms-3.0.xsd, http://www.springframework.org/schema/jms/spring-jms-4.0.xsd=org/springframework/jms/config/spring-jms-4.0.xsd}
+15:57:17,070 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.2.xsd
+15:57:17,105 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/context/spring-context.xsd] in classpath: org/springframework/context/config/spring-context-4.2.xsd
+15:57:17,108 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.2.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.2.xsd
+15:57:17,114 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/tx/spring-tx.xsd] in classpath: org/springframework/transaction/config/spring-tx-4.2.xsd
+15:57:17,118 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/data/jpa/spring-jpa.xsd] in classpath: org/springframework/data/jpa/repository/config/spring-jpa-1.8.xsd
+15:57:17,119 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://www.springframework.org/schema/data/repository/spring-repository.xsd] in classpath: org/springframework/data/repository/config/spring-repository-1.11.xsd
+15:57:17,123 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://cxf.apache.org/schemas/jaxrs.xsd] in classpath: schemas/jaxrs.xsd
+15:57:17,126 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://cxf.apache.org/schemas/configuration/cxf-beans.xsd] in classpath: schemas/configuration/cxf-beans.xsd
+15:57:17,128 DEBUG PluggableSchemaResolver:119 - Found XML schema [http://cxf.apache.org/schemas/jaxrs-common.xsd] in classpath: schemas/jaxrs-common.xsd
+15:57:17,134 DEBUG DefaultBeanDefinitionDocumentReader:92 - Loading bean definitions
+15:57:17,165 DEBUG BeanDefinitionParserDelegate:481 - Neither XML 'id' nor 'name' specified - using generated bean name [org.hibernate.ejb.HibernatePersistence#160b763]
+15:57:17,166 DEBUG BeanDefinitionParserDelegate:481 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#a7cb71]
+15:57:17,166 DEBUG BeanDefinitionParserDelegate:481 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.orm.jpa.vendor.HibernateJpaDialect#1d8cfb]
+15:57:17,172 DEBUG DefaultNamespaceHandlerResolver:157 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://activemq.apache.org/schema/core=org.apache.xbean.spring.context.v2.XBeanNamespaceHandler, http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/data/jpa=org.springframework.data.jpa.repository.config.JpaRepositoryNameSpaceHandler, http://www.w3.org/2006/07/ws-policy=org.apache.cxf.ws.policy.spring.PolicyNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/redis=org.springframework.data.redis.config.RedisNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://cxf.apache.org/jaxws=org.apache.cxf.jaxws.spring.NamespaceHandler, http://cxf.apache.org/policy=org.apache.cxf.ws.policy.spring.NamespaceHandler, http://www.springframework.org/schema/data/keyvalue=org.springframework.data.keyvalue.repository.config.KeyValueRepositoryNameSpaceHandler, http://cxf.apache.org/jaxrs-client=org.apache.cxf.jaxrs.client.spring.NamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://cxf.apache.org/transports/http/configuration=org.apache.cxf.transport.http.spring.NamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://cxf.apache.org/ws/addressing=org.apache.cxf.ws.addressing.spring.NamespaceHandler, http://www.springframework.org/schema/data/repository=org.springframework.data.repository.config.RepositoryNameSpaceHandler, http://cxf.apache.org/simple=org.apache.cxf.frontend.spring.NamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://cxf.apache.org/jaxrs=org.apache.cxf.jaxrs.spring.NamespaceHandler, http://cxf.apache.org/core=org.apache.cxf.bus.spring.NamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler, http://schemas.xmlsoap.org/ws/2004/09/policy=org.apache.cxf.ws.policy.spring.PolicyNamespaceHandler, http://www.springframework.org/schema/jms=org.springframework.jms.config.JmsNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.w3.org/ns/ws-policy=org.apache.cxf.ws.policy.spring.PolicyNamespaceHandler, http://activemq.org/config/1.0=org.apache.xbean.spring.context.v2.XBeanNamespaceHandler, http://cxf.apache.org/bindings/soap=org.apache.cxf.binding.soap.spring.NamespaceHandler}
+15:57:17,190 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+15:57:17,190 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:57:17,190 DEBUG StandardEnvironment:127 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+15:57:17,195 DEBUG ClassPathBeanDefinitionScanner:244 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+15:57:17,197 DEBUG ClassPathBeanDefinitionScanner:252 - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+15:57:17,202 DEBUG PathMatchingResourcePatternResolver:631 - Looking for matching resources in directory tree [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\service]
+15:57:17,203 DEBUG PathMatchingResourcePatternResolver:693 - Searching directory [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\service] for files matching pattern [C:/Data/WorkspaceAll/JAVA/BOS_SUYUN/common_parent03/crm4/target/classes/com/vincent/crm/service/**/*.class]
+15:57:17,205 DEBUG PathMatchingResourcePatternResolver:693 - Searching directory [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\service\impl] for files matching pattern [C:/Data/WorkspaceAll/JAVA/BOS_SUYUN/common_parent03/crm4/target/classes/com/vincent/crm/service/**/*.class]
+15:57:17,206 DEBUG PathMatchingResourcePatternResolver:424 - Resolved location pattern [classpath*:com/vincent/crm/service/**/*.class] to resources [file [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\service\CustomerService.class], file [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\service\impl\CustomerServiceImpl.class]]
+15:57:17,250 DEBUG ClassPathBeanDefinitionScanner:286 - Identified candidate component class: file [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\service\impl\CustomerServiceImpl.class]
+15:57:17,298 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+15:57:17,299 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:57:17,299 DEBUG StandardEnvironment:127 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+15:57:17,302 DEBUG PathMatchingResourcePatternResolver:545 - Looking for matching resources in jar file [file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar]
+15:57:17,305 DEBUG PathMatchingResourcePatternResolver:545 - Looking for matching resources in jar file [file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar]
+15:57:17,309 DEBUG PathMatchingResourcePatternResolver:545 - Looking for matching resources in jar file [file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-redis/1.4.1.RELEASE/spring-data-redis-1.4.1.RELEASE.jar]
+15:57:17,312 DEBUG PathMatchingResourcePatternResolver:424 - Resolved location pattern [classpath*:org/springframework/data/**/repository/support/**/*.class] to resources [URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/CrudMethodMetadata.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/CrudMethodMetadataPostProcessor$1.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/CrudMethodMetadataPostProcessor$DefaultCrudMethodMetadata.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/CrudMethodMetadataPostProcessor$ThreadBoundTargetSource.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/CrudMethodMetadataPostProcessor.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/DefaultJpaContext.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/EntityManagerBeanDefinitionRegistrarPostProcessor.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/JpaEntityInformation.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/JpaEntityInformationSupport.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/JpaMetamodelEntityInformation$IdentifierDerivingDirectFieldAccessFallbackBeanWrapper.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/JpaMetamodelEntityInformation$IdMetadata.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/JpaMetamodelEntityInformation.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/JpaPersistableEntityInformation.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/JpaRepositoryFactory.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/JpaRepositoryFactoryBean.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/Querydsl$1.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/Querydsl.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/QueryDslJpaRepository.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/QueryDslRepositorySupport.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository$ByIdsSpecification.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository$ExampleSpecification.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/AnnotationAttribute.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/CrudRepositoryInvoker.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/DefaultRepositoryInvokerFactory.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/DomainClassConverter$ToEntityConverter.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/DomainClassConverter$ToIdConverter.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/DomainClassConverter.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/DomainClassPropertyEditor.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/DomainClassPropertyEditorRegistrar.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/MethodParameters$AnnotationNamingMethodParameter.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/MethodParameters.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/PagingAndSortingRepositoryInvoker.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/QueryMethodParameterConversionException.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/ReflectionRepositoryInvoker.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/Repositories$EmptyRepositoryFactoryInformation.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/Repositories.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/RepositoryInvocationInformation.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/RepositoryInvoker.class], URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-commons/1.12.4.RELEASE/spring-data-commons-1.12.4.RELEASE.jar!/org/springframework/data/repository/support/RepositoryInvokerFactory.class]]
+15:57:17,346 DEBUG ClassPathScanningCandidateComponentProvider:286 - Identified candidate component class: URL [jar:file:/C:/Data/commons/LocalMavenRepository/org/springframework/data/spring-data-jpa/1.10.4.RELEASE/spring-data-jpa-1.10.4.RELEASE.jar!/org/springframework/data/jpa/repository/support/JpaRepositoryFactory.class]
+15:57:17,389 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+15:57:17,389 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:57:17,389 DEBUG StandardEnvironment:127 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+15:57:17,392 DEBUG PathMatchingResourcePatternResolver:631 - Looking for matching resources in directory tree [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\dao]
+15:57:17,392 DEBUG PathMatchingResourcePatternResolver:693 - Searching directory [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\dao] for files matching pattern [C:/Data/WorkspaceAll/JAVA/BOS_SUYUN/common_parent03/crm4/target/classes/com/vincent/crm/dao/**/*.class]
+15:57:17,393 DEBUG PathMatchingResourcePatternResolver:424 - Resolved location pattern [classpath*:com/vincent/crm/dao/**/*.class] to resources [file [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\dao\CustomerRepository.class]]
+15:57:17,398 DEBUG RepositoryComponentProvider:286 - Identified candidate component class: file [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\dao\CustomerRepository.class]
+15:57:17,403 DEBUG StandardEnvironment:109 - Adding [systemProperties] PropertySource with lowest search precedence
+15:57:17,404 DEBUG StandardEnvironment:109 - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:57:17,404 DEBUG StandardEnvironment:127 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+15:57:17,405 DEBUG PathMatchingResourcePatternResolver:631 - Looking for matching resources in directory tree [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\dao]
+15:57:17,406 DEBUG PathMatchingResourcePatternResolver:693 - Searching directory [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\dao] for files matching pattern [C:/Data/WorkspaceAll/JAVA/BOS_SUYUN/common_parent03/crm4/target/classes/com/vincent/crm/dao/**/*CustomerRepositoryImpl.class]
+15:57:17,406 DEBUG PathMatchingResourcePatternResolver:424 - Resolved location pattern [classpath*:com/vincent/crm/dao/**/*CustomerRepositoryImpl.class] to resources []
+15:57:17,536 DEBUG RepositoryConfigurationDelegate:141 - Spring Data JPA - Registering repository: customerRepository - Interface: com.vincent.crm.dao.CustomerRepository - Factory: org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean
+15:57:17,606 DEBUG LogUtils:140 - Using org.apache.cxf.common.logging.Log4jLogger for logging.
+15:57:17,617 DEBUG AbstractBeanDefinitionParser:249 - Adding org.apache.cxf.configuration.spring.AbstractBeanDefinitionParser.wireBus attribute PROPERTY to bean org.springframework.beans.factory.support.BeanDefinitionBuilder@178ef53
+15:57:17,620 DEBUG BeanDefinitionParserDelegate:481 - Neither XML 'id' nor 'name' specified - using generated bean name [org.apache.cxf.interceptor.LoggingInInterceptor#10b07b9]
+15:57:17,620 DEBUG BeanDefinitionParserDelegate:481 - Neither XML 'id' nor 'name' specified - using generated bean name [org.apache.cxf.interceptor.LoggingOutInterceptor#1283fbd]
+15:57:17,621 DEBUG XmlBeanDefinitionReader:224 - Loaded 23 bean definitions from location pattern [classpath:applicationContext.xml]
+15:57:17,621 DEBUG XmlWebApplicationContext:612 - Bean factory for Root WebApplicationContext: org.springframework.beans.factory.support.DefaultListableBeanFactory@bbf022: defining beans [dataSource,entityManagerFactory,transactionManager,customerServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0,org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport_Predictor,emBeanDefinitionRegistrarPostProcessor,jpaMappingContext,jpaContext,customerRepository,org.apache.cxf.jaxrs.spring.JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean---1359393979]; root of factory hierarchy
+15:57:17,635 DEBUG DefaultListableBeanFactory:874 - Registering scope 'request' with implementation [org.springframework.web.context.request.RequestScope@2e63bf]
+15:57:17,636 DEBUG DefaultListableBeanFactory:874 - Registering scope 'session' with implementation [org.springframework.web.context.request.SessionScope@1e3449d]
+15:57:17,636 DEBUG DefaultListableBeanFactory:874 - Registering scope 'globalSession' with implementation [org.springframework.web.context.request.SessionScope@1adb901]
+15:57:17,637 DEBUG DefaultListableBeanFactory:874 - Registering scope 'application' with implementation [org.springframework.web.context.support.ServletContextScope@13acc3c]
+15:57:17,670 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+15:57:17,671 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+15:57:17,692 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+15:57:17,694 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+15:57:17,751 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'emBeanDefinitionRegistrarPostProcessor'
+15:57:17,752 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'emBeanDefinitionRegistrarPostProcessor'
+15:57:17,752 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'emBeanDefinitionRegistrarPostProcessor' to allow for resolving potential circular references
+15:57:17,752 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'emBeanDefinitionRegistrarPostProcessor'
+15:57:17,768 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+15:57:17,768 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+15:57:17,769  INFO AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+15:57:17,769 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+15:57:17,769 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+15:57:17,770 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+15:57:17,770 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+15:57:17,770 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+15:57:17,770 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+15:57:17,770 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+15:57:17,770 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+15:57:17,772 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+15:57:17,772 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+15:57:17,772 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+15:57:17,773 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+15:57:17,773 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+15:57:17,773 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+15:57:17,773 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport_Predictor'
+15:57:17,773 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport_Predictor'
+15:57:17,791 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport_Predictor' to allow for resolving potential circular references
+15:57:17,791 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport_Predictor'
+15:57:17,792 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+15:57:17,792 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+15:57:17,792 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+15:57:17,792 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+15:57:17,792 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+15:57:17,792 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+15:57:17,793 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+15:57:17,793 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+15:57:17,793 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+15:57:17,793 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+15:57:17,809 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+15:57:17,844 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+15:57:17,848 DEBUG XmlWebApplicationContext:718 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@182b279]
+15:57:17,850 DEBUG XmlWebApplicationContext:742 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@b768a9]
+15:57:17,852 DEBUG UiApplicationContextUtils:85 - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@e39ed7]
+15:57:17,853 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'entityManagerFactory'
+15:57:17,854 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'entityManagerFactory'
+15:57:17,858 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'entityManagerFactory' to allow for resolving potential circular references
+15:57:17,868 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'dataSource'
+15:57:17,868 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'dataSource'
+15:57:17,890  INFO MLog:80 - MLog clients using log4j logging.
+15:57:18,307  INFO C3P0Registry:204 - Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+15:57:18,331 DEBUG DynamicPooledDataSourceManagerMBean:236 - MBean: com.mchange.v2.c3p0:type=PooledDataSource[31sqiu9umpp1wmikc5e9|ec2e6e] registered.
+15:57:18,346 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+15:57:18,367 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:18,367 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:18,369 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+15:57:18,381 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+15:57:18,381 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+15:57:18,388 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+15:57:18,395 DEBUG BeanFactoryAdvisorRetrievalHelper:87 - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:18,398 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+15:57:18,399 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:18,403 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'dataSource'
+15:57:18,404 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.hibernate.ejb.HibernatePersistence#160b763'
+15:57:18,427 DEBUG logging:38 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+15:57:18,470 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:18,474 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.hibernate.ejb.HibernatePersistence#160b763'
+15:57:18,474 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#a7cb71'
+15:57:18,508 DEBUG BeanUtils:455 - No property editor [org.springframework.orm.jpa.vendor.DatabaseEditor] found for type org.springframework.orm.jpa.vendor.Database according to 'Editor' suffix convention
+15:57:18,509 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:18,509 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter#a7cb71'
+15:57:18,509 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.orm.jpa.vendor.HibernateJpaDialect#1d8cfb'
+15:57:18,514 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:18,515 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.orm.jpa.vendor.HibernateJpaDialect#1d8cfb'
+15:57:18,516 DEBUG DefaultListableBeanFactory:1620 - Invoking afterPropertiesSet() on bean with name 'entityManagerFactory'
+15:57:18,525 DEBUG PathMatchingResourcePatternResolver:631 - Looking for matching resources in directory tree [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\domain]
+15:57:18,525 DEBUG PathMatchingResourcePatternResolver:693 - Searching directory [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\domain] for files matching pattern [C:/Data/WorkspaceAll/JAVA/BOS_SUYUN/common_parent03/crm4/target/classes/com/vincent/crm/domain/**/*.class]
+15:57:18,526 DEBUG PathMatchingResourcePatternResolver:424 - Resolved location pattern [classpath*:com/vincent/crm/domain/**/*.class] to resources [file [C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\classes\com\vincent\crm\domain\Customer.class]]
+15:57:18,529  INFO LocalContainerEntityManagerFactoryBean:339 - Building JPA container EntityManagerFactory for persistence unit 'default'
+15:57:18,529  WARN HibernatePersistence:41 - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+15:57:18,609 DEBUG BasicResourcePool:404 - incremented pending_acquires: 1
+15:57:18,609 DEBUG BasicResourcePool:404 - incremented pending_acquires: 2
+15:57:18,610 DEBUG BasicResourcePool:404 - incremented pending_acquires: 3
+15:57:18,610 DEBUG BasicResourcePool:289 - com.mchange.v2.resourcepool.BasicResourcePool@143fb8 config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; mox_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false]
+15:57:18,616  INFO AbstractPoolBackedDataSource:462 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 31sqiu9umpp1wmikc5e9|ec2e6e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 31sqiu9umpp1wmikc5e9|ec2e6e, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.65.12:1521:ORCL, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+15:57:18,616 DEBUG LogHelper:102 - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: WebappClassLoader
+  context: /crm4
+  delegate: false
+  repositories:
+----------> Parent Classloader:
+ClassRealm[plugin>org.codehaus.mojo:tomcat-maven-plugin:1.1, parent: sun.misc.Launcher$AppClassLoader@290fbc]
+
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 31sqiu9umpp1wmikc5e9|ec2e6e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 31sqiu9umpp1wmikc5e9|ec2e6e, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.65.12:1521:ORCL, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/C:/Data/WorkspaceAll/JAVA/BOS_SUYUN/common_parent03/crm4/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.vincent.crm.domain.Customer]
+	Mapping files names []
+	Properties []
+15:57:18,693 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+15:57:18,698 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+15:57:18,706 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+15:57:18,707 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.jpa.event.spi.JpaIntegrator].
+15:57:19,007  INFO Version:37 - HHH000412: Hibernate Core {5.0.7.Final}
+15:57:19,012  INFO Environment:213 - HHH000206: hibernate.properties not found
+15:57:19,015  INFO Environment:317 - HHH000021: Bytecode provider name : javassist
+15:57:19,051 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+15:57:19,108 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@2b2f7c.acquireResource() returning. 
+15:57:19,109 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@2b2f7c.acquireResource() returning. 
+15:57:19,109 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@143fb8 [managed: 1, unused: 1, excluded: 0]
+15:57:19,109 DEBUG C3P0PooledConnectionPool:217 - com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager@2b2f7c.acquireResource() returning. 
+15:57:19,109 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@143fb8 [managed: 2, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@10f722e)
+15:57:19,110 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@143fb8 [managed: 3, unused: 3, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@10f722e)
+15:57:19,110 DEBUG BasicResourcePool:422 - decremented pending_acquires: 2
+15:57:19,110 DEBUG BasicResourcePool:422 - decremented pending_acquires: 1
+15:57:19,110 DEBUG BasicResourcePool:422 - decremented pending_acquires: 0
+15:57:19,126 DEBUG RegionFactoryInitiator:88 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+15:57:19,142  INFO Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+15:57:19,265 DEBUG BasicTypeRegistry:135 - Adding type registration boolean -> org.hibernate.type.BooleanType@adaf4b
+15:57:19,265 DEBUG BasicTypeRegistry:135 - Adding type registration boolean -> org.hibernate.type.BooleanType@adaf4b
+15:57:19,266 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@adaf4b
+15:57:19,267 DEBUG BasicTypeRegistry:135 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@1138d14
+15:57:19,269 DEBUG BasicTypeRegistry:135 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@13eedd5
+15:57:19,270 DEBUG BasicTypeRegistry:135 - Adding type registration yes_no -> org.hibernate.type.YesNoType@1736144
+15:57:19,273 DEBUG BasicTypeRegistry:135 - Adding type registration byte -> org.hibernate.type.ByteType@16f6ae9
+15:57:19,274 DEBUG BasicTypeRegistry:135 - Adding type registration byte -> org.hibernate.type.ByteType@16f6ae9
+15:57:19,274 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@16f6ae9
+15:57:19,275 DEBUG BasicTypeRegistry:135 - Adding type registration character -> org.hibernate.type.CharacterType@1885944
+15:57:19,276 DEBUG BasicTypeRegistry:135 - Adding type registration char -> org.hibernate.type.CharacterType@1885944
+15:57:19,276 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@1885944
+15:57:19,279 DEBUG BasicTypeRegistry:135 - Adding type registration short -> org.hibernate.type.ShortType@12d0094
+15:57:19,279 DEBUG BasicTypeRegistry:135 - Adding type registration short -> org.hibernate.type.ShortType@12d0094
+15:57:19,279 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@12d0094
+15:57:19,281 DEBUG BasicTypeRegistry:135 - Adding type registration integer -> org.hibernate.type.IntegerType@16ea6ac
+15:57:19,282 DEBUG BasicTypeRegistry:135 - Adding type registration int -> org.hibernate.type.IntegerType@16ea6ac
+15:57:19,282 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@16ea6ac
+15:57:19,285 DEBUG BasicTypeRegistry:135 - Adding type registration long -> org.hibernate.type.LongType@19cceab
+15:57:19,285 DEBUG BasicTypeRegistry:135 - Adding type registration long -> org.hibernate.type.LongType@19cceab
+15:57:19,285 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@19cceab
+15:57:19,288 DEBUG BasicTypeRegistry:135 - Adding type registration float -> org.hibernate.type.FloatType@3eb778
+15:57:19,288 DEBUG BasicTypeRegistry:135 - Adding type registration float -> org.hibernate.type.FloatType@3eb778
+15:57:19,288 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@3eb778
+15:57:19,290 DEBUG BasicTypeRegistry:135 - Adding type registration double -> org.hibernate.type.DoubleType@c16ed3
+15:57:19,290 DEBUG BasicTypeRegistry:135 - Adding type registration double -> org.hibernate.type.DoubleType@c16ed3
+15:57:19,291 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@c16ed3
+15:57:19,293 DEBUG BasicTypeRegistry:135 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3cf4b7
+15:57:19,293 DEBUG BasicTypeRegistry:135 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3cf4b7
+15:57:19,295 DEBUG BasicTypeRegistry:135 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@b5ba0d
+15:57:19,295 DEBUG BasicTypeRegistry:135 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@b5ba0d
+15:57:19,296 DEBUG BasicTypeRegistry:135 - Adding type registration string -> org.hibernate.type.StringType@15bce
+15:57:19,297 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.String -> org.hibernate.type.StringType@15bce
+15:57:19,298 DEBUG BasicTypeRegistry:135 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@1fee847
+15:57:19,299 DEBUG BasicTypeRegistry:135 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@14ca52d
+15:57:19,301 DEBUG BasicTypeRegistry:135 - Adding type registration url -> org.hibernate.type.UrlType@107524b
+15:57:19,301 DEBUG BasicTypeRegistry:135 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@107524b
+15:57:19,304 DEBUG BasicTypeRegistry:135 - Adding type registration date -> org.hibernate.type.DateType@17f8627
+15:57:19,304 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@17f8627
+15:57:19,306 DEBUG BasicTypeRegistry:135 - Adding type registration time -> org.hibernate.type.TimeType@3c6b5
+15:57:19,307 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@3c6b5
+15:57:19,309 DEBUG BasicTypeRegistry:135 - Adding type registration timestamp -> org.hibernate.type.TimestampType@19a1925
+15:57:19,309 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@19a1925
+15:57:19,309 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@19a1925
+15:57:19,311 DEBUG BasicTypeRegistry:135 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@191fb0
+15:57:19,313 DEBUG BasicTypeRegistry:135 - Adding type registration calendar -> org.hibernate.type.CalendarType@1c5d53f
+15:57:19,313 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@1c5d53f
+15:57:19,313 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@1c5d53f
+15:57:19,314 DEBUG BasicTypeRegistry:135 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@ac8862
+15:57:19,316 DEBUG BasicTypeRegistry:135 - Adding type registration locale -> org.hibernate.type.LocaleType@367fb6
+15:57:19,316 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@367fb6
+15:57:19,317 DEBUG BasicTypeRegistry:135 - Adding type registration currency -> org.hibernate.type.CurrencyType@1793a48
+15:57:19,318 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@1793a48
+15:57:19,319 DEBUG BasicTypeRegistry:135 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@45c9cf
+15:57:19,319 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@45c9cf
+15:57:19,321 DEBUG BasicTypeRegistry:135 - Adding type registration class -> org.hibernate.type.ClassType@12e2a
+15:57:19,321 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@12e2a
+15:57:19,323 DEBUG BasicTypeRegistry:135 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@83860
+15:57:19,324 DEBUG BasicTypeRegistry:135 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@83860
+15:57:19,324 DEBUG BasicTypeRegistry:135 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@a5b964
+15:57:19,326 DEBUG BasicTypeRegistry:135 - Adding type registration binary -> org.hibernate.type.BinaryType@133f19f
+15:57:19,327 DEBUG BasicTypeRegistry:135 - Adding type registration byte[] -> org.hibernate.type.BinaryType@133f19f
+15:57:19,327 DEBUG BasicTypeRegistry:135 - Adding type registration [B -> org.hibernate.type.BinaryType@133f19f
+15:57:19,329 DEBUG BasicTypeRegistry:135 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@15d2b0b
+15:57:19,329 DEBUG BasicTypeRegistry:135 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@15d2b0b
+15:57:19,329 DEBUG BasicTypeRegistry:135 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@15d2b0b
+15:57:19,330 DEBUG BasicTypeRegistry:135 - Adding type registration image -> org.hibernate.type.ImageType@5d4c14
+15:57:19,332 DEBUG BasicTypeRegistry:135 - Adding type registration characters -> org.hibernate.type.CharArrayType@24132d
+15:57:19,332 DEBUG BasicTypeRegistry:135 - Adding type registration char[] -> org.hibernate.type.CharArrayType@24132d
+15:57:19,332 DEBUG BasicTypeRegistry:135 - Adding type registration [C -> org.hibernate.type.CharArrayType@24132d
+15:57:19,334 DEBUG BasicTypeRegistry:135 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@175eddc
+15:57:19,334 DEBUG BasicTypeRegistry:135 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@175eddc
+15:57:19,334 DEBUG BasicTypeRegistry:135 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@175eddc
+15:57:19,335 DEBUG BasicTypeRegistry:135 - Adding type registration text -> org.hibernate.type.TextType@59f09d
+15:57:19,336 DEBUG BasicTypeRegistry:135 - Adding type registration ntext -> org.hibernate.type.NTextType@1ef4491
+15:57:19,343 DEBUG BasicTypeRegistry:135 - Adding type registration blob -> org.hibernate.type.BlobType@6e286e
+15:57:19,343 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@6e286e
+15:57:19,344 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1883f39
+15:57:19,350 DEBUG BasicTypeRegistry:135 - Adding type registration clob -> org.hibernate.type.ClobType@1fe8ea4
+15:57:19,350 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@1fe8ea4
+15:57:19,356 DEBUG BasicTypeRegistry:135 - Adding type registration nclob -> org.hibernate.type.NClobType@ae2427
+15:57:19,357 DEBUG BasicTypeRegistry:135 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@ae2427
+15:57:19,358 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@373864
+15:57:19,359 DEBUG BasicTypeRegistry:135 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@157d1a0
+15:57:19,361 DEBUG BasicTypeRegistry:135 - Adding type registration serializable -> org.hibernate.type.SerializableType@11212ae
+15:57:19,366 DEBUG BasicTypeRegistry:135 - Adding type registration object -> org.hibernate.type.ObjectType@129a92f
+15:57:19,366 DEBUG BasicTypeRegistry:135 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@129a92f
+15:57:19,367 DEBUG BasicTypeRegistry:135 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@1edfa20
+15:57:19,367 DEBUG BasicTypeRegistry:135 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@c08448
+15:57:19,367 DEBUG BasicTypeRegistry:135 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@12ccccc
+15:57:19,367 DEBUG BasicTypeRegistry:135 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@399e19
+15:57:19,368 DEBUG BasicTypeRegistry:135 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@baafbd
+15:57:19,368 DEBUG BasicTypeRegistry:135 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@67cab3
+15:57:19,368 DEBUG BasicTypeRegistry:135 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2cb62f
+15:57:19,368 DEBUG BasicTypeRegistry:135 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@16cceee
+15:57:19,386 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@143fb8 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@10f722e)
+15:57:19,399 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : Oracle
+    version : Oracle Database 10g Enterprise Edition Release 10.2.0.1.0 - Production
+With the Partitioning, OLAP and Data Mining options
+      major : 10
+      minor : 2
+15:57:19,399 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : Oracle JDBC driver
+    version : 10.2.0.3.0
+      major : 10
+      minor : 2
+15:57:19,399 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 10.2
+15:57:19,424  INFO Dialect:156 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+15:57:19,580  INFO LobCreatorBuilderImpl:124 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+15:57:19,582 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@143fb8 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@10f722e)
+15:57:19,582 DEBUG NewProxyConnection:1260 - com.mchange.v2.c3p0.impl.NewProxyConnection@386dff: close() called more than once.
+15:57:19,614 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+15:57:19,615 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+15:57:19,616 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+15:57:19,616 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+15:57:19,617 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+15:57:19,619 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+15:57:19,620 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+15:57:19,622 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+15:57:19,624 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+15:57:19,626 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+15:57:19,627 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+15:57:19,628 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+15:57:19,628 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+15:57:19,630 DEBUG DefaultIdentifierGeneratorFactory:78 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+15:57:19,686 DEBUG Namespace:47 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+15:57:19,722 DEBUG AnnotationBinder:509 - Binding entity from annotated class: com.vincent.crm.domain.Customer
+15:57:19,761 DEBUG Ejb3Column:213 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+15:57:19,771 DEBUG EntityBinder:389 - Import with entity name Customer
+15:57:19,776 DEBUG EntityBinder:665 - Bind entity com.vincent.crm.domain.Customer on table T_CUSTOMER
+15:57:19,808 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_ID, insertable=true, updatable=true, unique=false}
+15:57:19,813 DEBUG PropertyBinder:169 - MetadataSourceProcessor property id with lazy=false
+15:57:19,817 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:id]
+15:57:19,819 DEBUG SimpleValueBinder:392 - building SimpleValue for id
+15:57:19,821 DEBUG PropertyBinder:260 - Building property id
+15:57:19,833 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_ADDRESS, insertable=true, updatable=true, unique=false}
+15:57:19,833 DEBUG PropertyBinder:169 - MetadataSourceProcessor property address with lazy=false
+15:57:19,833 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:address]
+15:57:19,833 DEBUG SimpleValueBinder:392 - building SimpleValue for address
+15:57:19,834 DEBUG PropertyBinder:260 - Building property address
+15:57:19,834 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_BRITHDAY, insertable=true, updatable=true, unique=false}
+15:57:19,834 DEBUG PropertyBinder:169 - MetadataSourceProcessor property birthday with lazy=false
+15:57:19,834 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:birthday]
+15:57:19,835 DEBUG SimpleValueBinder:392 - building SimpleValue for birthday
+15:57:19,835 DEBUG PropertyBinder:260 - Building property birthday
+15:57:19,836 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_COMPANY, insertable=true, updatable=true, unique=false}
+15:57:19,836 DEBUG PropertyBinder:169 - MetadataSourceProcessor property company with lazy=false
+15:57:19,836 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:company]
+15:57:19,836 DEBUG SimpleValueBinder:392 - building SimpleValue for company
+15:57:19,837 DEBUG PropertyBinder:260 - Building property company
+15:57:19,837 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_DEPARTMENT, insertable=true, updatable=true, unique=false}
+15:57:19,837 DEBUG PropertyBinder:169 - MetadataSourceProcessor property department with lazy=false
+15:57:19,837 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:department]
+15:57:19,838 DEBUG SimpleValueBinder:392 - building SimpleValue for department
+15:57:19,838 DEBUG PropertyBinder:260 - Building property department
+15:57:19,838 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_EMAIL, insertable=true, updatable=true, unique=false}
+15:57:19,838 DEBUG PropertyBinder:169 - MetadataSourceProcessor property email with lazy=false
+15:57:19,839 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:email]
+15:57:19,839 DEBUG SimpleValueBinder:392 - building SimpleValue for email
+15:57:19,839 DEBUG PropertyBinder:260 - Building property email
+15:57:19,839 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_Fixed_AREA_ID, insertable=true, updatable=true, unique=false}
+15:57:19,840 DEBUG PropertyBinder:169 - MetadataSourceProcessor property fixedAreaId with lazy=false
+15:57:19,840 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:fixedAreaId]
+15:57:19,840 DEBUG SimpleValueBinder:392 - building SimpleValue for fixedAreaId
+15:57:19,840 DEBUG PropertyBinder:260 - Building property fixedAreaId
+15:57:19,841 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_MOBILEPHONE, insertable=true, updatable=true, unique=false}
+15:57:19,841 DEBUG PropertyBinder:169 - MetadataSourceProcessor property mobilePhone with lazy=false
+15:57:19,841 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:mobilePhone]
+15:57:19,841 DEBUG SimpleValueBinder:392 - building SimpleValue for mobilePhone
+15:57:19,841 DEBUG PropertyBinder:260 - Building property mobilePhone
+15:57:19,842 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_PASSWORD, insertable=true, updatable=true, unique=false}
+15:57:19,842 DEBUG PropertyBinder:169 - MetadataSourceProcessor property password with lazy=false
+15:57:19,842 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:password]
+15:57:19,843 DEBUG SimpleValueBinder:392 - building SimpleValue for password
+15:57:19,843 DEBUG PropertyBinder:260 - Building property password
+15:57:19,843 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_POSITION, insertable=true, updatable=true, unique=false}
+15:57:19,843 DEBUG PropertyBinder:169 - MetadataSourceProcessor property position with lazy=false
+15:57:19,844 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:position]
+15:57:19,844 DEBUG SimpleValueBinder:392 - building SimpleValue for position
+15:57:19,844 DEBUG PropertyBinder:260 - Building property position
+15:57:19,844 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_SEX, insertable=true, updatable=true, unique=false}
+15:57:19,845 DEBUG PropertyBinder:169 - MetadataSourceProcessor property sex with lazy=false
+15:57:19,845 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:sex]
+15:57:19,845 DEBUG SimpleValueBinder:392 - building SimpleValue for sex
+15:57:19,845 DEBUG PropertyBinder:260 - Building property sex
+15:57:19,846 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_TELEPHONE, insertable=true, updatable=true, unique=false}
+15:57:19,846 DEBUG PropertyBinder:169 - MetadataSourceProcessor property telephone with lazy=false
+15:57:19,846 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:telephone]
+15:57:19,846 DEBUG SimpleValueBinder:392 - building SimpleValue for telephone
+15:57:19,846 DEBUG PropertyBinder:260 - Building property telephone
+15:57:19,847 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_TYPE, insertable=true, updatable=true, unique=false}
+15:57:19,847 DEBUG PropertyBinder:169 - MetadataSourceProcessor property type with lazy=false
+15:57:19,847 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:type]
+15:57:19,847 DEBUG SimpleValueBinder:392 - building SimpleValue for type
+15:57:19,848 DEBUG PropertyBinder:260 - Building property type
+15:57:19,848 DEBUG Ejb3Column:213 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(T_CUSTOMER), mappingColumn=C_USERNAME, insertable=true, updatable=true, unique=false}
+15:57:19,848 DEBUG PropertyBinder:169 - MetadataSourceProcessor property username with lazy=false
+15:57:19,848 DEBUG AbstractPropertyHolder:90 - Attempting to locate auto-apply AttributeConverter for property [com.vincent.crm.domain.Customer:username]
+15:57:19,849 DEBUG SimpleValueBinder:392 - building SimpleValue for username
+15:57:19,849 DEBUG PropertyBinder:260 - Building property username
+15:57:19,851 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for id
+15:57:19,851 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for address
+15:57:19,851 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for birthday
+15:57:19,852 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for company
+15:57:19,852 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for department
+15:57:19,852 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for email
+15:57:19,852 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for fixedAreaId
+15:57:19,852 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for mobilePhone
+15:57:19,853 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for password
+15:57:19,853 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for position
+15:57:19,853 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for sex
+15:57:19,853 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for telephone
+15:57:19,854 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for type
+15:57:19,854 DEBUG SimpleValueBinder:431 - Starting fillSimpleValue for username
+15:57:19,856 DEBUG PrimaryKey:35 - Forcing column [c_id] to be non-null as it is part of the primary key for table [t_customer]
+15:57:20,032 DEBUG SessionFactoryImpl:210 - Building session factory
+15:57:20,034 DEBUG Settings:69 - SessionFactory name : null
+15:57:20,034 DEBUG Settings:70 - Automatic flush during beforeCompletion(): disabled
+15:57:20,034 DEBUG Settings:71 - Automatic session close at end of transaction: disabled
+15:57:20,034 DEBUG Settings:73 - Statistics: disabled
+15:57:20,035 DEBUG Settings:75 - Deleted entity synthetic identifier rollback: disabled
+15:57:20,035 DEBUG Settings:76 - Default entity-mode: pojo
+15:57:20,035 DEBUG Settings:77 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+15:57:20,035 DEBUG Settings:78 - Allow initialization of lazy state outside session : disabled
+15:57:20,035 DEBUG Settings:80 - Using BatchFetchStyle : LEGACY
+15:57:20,036 DEBUG Settings:81 - Default batch fetch size: -1
+15:57:20,036 DEBUG Settings:82 - Maximum outer join fetch depth: null
+15:57:20,036 DEBUG Settings:83 - Default null ordering: NONE
+15:57:20,036 DEBUG Settings:84 - Order SQL updates by primary key: disabled
+15:57:20,036 DEBUG Settings:85 - Order SQL inserts for batching: disabled
+15:57:20,037 DEBUG Settings:87 - multi-tenancy strategy : NONE
+15:57:20,037 DEBUG Settings:89 - JTA Track by Thread: enabled
+15:57:20,037 DEBUG Settings:91 - Query language substitutions: {}
+15:57:20,037 DEBUG Settings:92 - JPA query language strict compliance: disabled
+15:57:20,037 DEBUG Settings:93 - Named query checking : enabled
+15:57:20,037 DEBUG Settings:95 - Second-level cache: enabled
+15:57:20,038 DEBUG Settings:96 - Second-level query cache: disabled
+15:57:20,038 DEBUG Settings:97 - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@daa662
+15:57:20,038 DEBUG Settings:98 - Second-level cache region prefix: null
+15:57:20,038 DEBUG Settings:99 - Optimize second-level cache for minimal puts: disabled
+15:57:20,038 DEBUG Settings:100 - Structured second-level cache entries: disabled
+15:57:20,039 DEBUG Settings:101 - Second-level cache direct-reference entries: disabled
+15:57:20,039 DEBUG Settings:102 - Automatic eviction of collection cache: disabled
+15:57:20,039 DEBUG Settings:104 - JDBC batch size: 15
+15:57:20,039 DEBUG Settings:105 - JDBC batch updates for versioned data: disabled
+15:57:20,039 DEBUG Settings:106 - Scrollable result sets: enabled
+15:57:20,039 DEBUG Settings:107 - Wrap result sets: disabled
+15:57:20,040 DEBUG Settings:108 - JDBC3 getGeneratedKeys(): disabled
+15:57:20,040 DEBUG Settings:109 - JDBC result set fetch size: null
+15:57:20,040 DEBUG Settings:110 - Connection release mode: ON_CLOSE
+15:57:20,040 DEBUG Settings:111 - Generate SQL with comments: disabled
+15:57:20,117 DEBUG SessionFactoryImpl:875 - Returning a Reference to the SessionFactory
+15:57:20,118 DEBUG SessionFactoryImpl:255 - Session factory constructed with filter configurations : {}
+15:57:20,129 DEBUG SessionFactoryImpl:256 - Instantiating session factory with properties: {java.vendor=Oracle Corporation, sun.java.launcher=SUN_STANDARD, catalina.base=C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\tomcat, sun.management.compiler=HotSpot Client Compiler, catalina.useNaming=true, os.name=Windows 8.1, sun.boot.class.path=C:\Program Files (x86)\Java\jdk1.7.0_72\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.7.0_72\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.7.0_72\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.7.0_72\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.7.0_72\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.7.0_72\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.7.0_72\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.7.0_72\jre\classes, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.7.0_72-b14, user.name=GaGa, shared.loader=, guice.disable.misplaced.annotation.check=true, tomcat.util.buf.StringCache.byte.enabled=true, javax.persistence.validation.mode=AUTO, user.language=zh, java.naming.factory.initial=org.apache.naming.java.javaURLContextFactory, idea.version=2017.2.3, sun.boot.library.path=C:\Program Files (x86)\Java\jdk1.7.0_72\jre\bin, classworlds.conf=C:\Data\Softwares\apache-maven-3.3.9\bin\m2.conf, java.version=1.7.0_72, user.timezone=Asia/Shanghai, sun.arch.data.model=32, java.endorsed.dirs=C:\Program Files (x86)\Java\jdk1.7.0_72\jre\lib\endorsed, sun.cpu.isalist=pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86, sun.jnu.encoding=GBK, file.encoding.pkg=sun.io, java.specification.name=Java Platform API Specification, package.access=sun.,org.apache.catalina.,org.apache.coyote.,org.apache.tomcat.,org.apache.jasper.,sun.beans., file.separator=\, java.class.version=51.0, user.country=CN, java.home=C:\Program Files (x86)\Java\jdk1.7.0_72\jre, java.vm.info=mixed mode, sharing, os.version=6.3, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@ad8de4, hibernate.connection.datasource=com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 31sqiu9umpp1wmikc5e9|ec2e6e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.driver.OracleDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 31sqiu9umpp1wmikc5e9|ec2e6e, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@192.168.65.12:1521:ORCL, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ], path.separator=;, java.vm.version=24.72-b04, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, user.script=, package.definition=sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.tomcat.,org.apache.jasper., java.naming.factory.url.pkgs=org.apache.naming, user.home=C:\Users\GaGa, java.specification.vendor=Oracle Corporation, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, hibernate.hbm2ddl.auto=update, java.library.path=C:\Program Files (x86)\Java\jdk1.7.0_72\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Java\jdk1.7.0_72\bin;"C:\Data\Softwares\jboss-as-7.1.1.Final\bin;";C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Program Files (x86)\VanDyke Software\Clients\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\VisualSVN Server\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Data\Softwares\apache-maven-3.3.9\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Users\GaGa\AppData\Local\Microsoft\WindowsApps;;., java.vendor.url=http://java.oracle.com/, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.Oracle10gDialect, hibernate.ejb.persistenceUnitName=default, common.loader=C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\tomcat/lib,C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\tomcat/lib/*.jar, maven.home=C:\Data\Softwares\apache-maven-3.3.9, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.classworlds.Launcher -Didea.version=2017.2.3 tomcat:run, java.class.path=C:\Data\Softwares\apache-maven-3.3.9\boot\plexus-classworlds-2.5.2.jar;C:\Program Files\IntelliIDEA\IntelliJ IDEA 2017.2.3\lib\idea_rt.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.7, catalina.home=C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4\target\tomcat, sun.cpu.endian=little, sun.os.patch.level=, java.io.tmpdir=C:\Users\GaGa\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, maven.multiModuleProjectDirectory=C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4, javax.persistence.sharedCache.mode=UNSPECIFIED, server.loader=, os.arch=x86, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files (x86)\Java\jdk1.7.0_72\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext, user.dir=C:\Data\WorkspaceAll\JAVA\BOS_SUYUN\common_parent03\crm4, line.separator=
+, java.vm.name=Java HotSpot(TM) Client VM, file.encoding=UTF-8, java.specification.version=1.7, hibernate.show_sql=true}
+15:57:20,146 DEBUG JaccIntegrator:80 - Skipping JACC integration as it was not enabled
+15:57:20,152 DEBUG CascadeStyles:268 - External cascade style regsitration [persist : STYLE_PERSIST_SKIPLAZY] overrode base registration [STYLE_PERSIST]
+15:57:20,209 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [com.vincent.crm.domain.Customer] is safe
+15:57:20,210 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.vincent.crm.domain.Customer
+15:57:20,226 DEBUG ClassLoaderAccessImpl:55 - Not known whether passed class name [com.vincent.crm.domain.Customer] is safe
+15:57:20,226 DEBUG ClassLoaderAccessImpl:57 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.vincent.crm.domain.Customer
+15:57:20,287 DEBUG AbstractEntityPersister:3481 - Static SQL for entity: com.vincent.crm.domain.Customer
+15:57:20,287 DEBUG AbstractEntityPersister:3486 -  Version select: select C_ID from T_CUSTOMER where C_ID =?
+15:57:20,287 DEBUG AbstractEntityPersister:3489 -  Snapshot select: select customer_.C_ID, customer_.C_ADDRESS as C_ADDRESS2_0_, customer_.C_BRITHDAY as C_BRITHDAY3_0_, customer_.C_COMPANY as C_COMPANY4_0_, customer_.C_DEPARTMENT as C_DEPARTMENT5_0_, customer_.C_EMAIL as C_EMAIL6_0_, customer_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_, customer_.C_MOBILEPHONE as C_MOBILEPHONE8_0_, customer_.C_PASSWORD as C_PASSWORD9_0_, customer_.C_POSITION as C_POSITION10_0_, customer_.C_SEX as C_SEX11_0_, customer_.C_TELEPHONE as C_TELEPHONE12_0_, customer_.C_TYPE as C_TYPE13_0_, customer_.C_USERNAME as C_USERNAME14_0_ from T_CUSTOMER customer_ where customer_.C_ID=?
+15:57:20,288 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into T_CUSTOMER (C_ADDRESS, C_BRITHDAY, C_COMPANY, C_DEPARTMENT, C_EMAIL, C_Fixed_AREA_ID, C_MOBILEPHONE, C_PASSWORD, C_POSITION, C_SEX, C_TELEPHONE, C_TYPE, C_USERNAME, C_ID) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+15:57:20,288 DEBUG AbstractEntityPersister:394 -  Update 0: update T_CUSTOMER set C_ADDRESS=?, C_BRITHDAY=?, C_COMPANY=?, C_DEPARTMENT=?, C_EMAIL=?, C_Fixed_AREA_ID=?, C_MOBILEPHONE=?, C_PASSWORD=?, C_POSITION=?, C_SEX=?, C_TELEPHONE=?, C_TYPE=?, C_USERNAME=? where C_ID=?
+15:57:20,288 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from T_CUSTOMER where C_ID=?
+15:57:20,323 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6169f5]
+15:57:20,324 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : address
+15:57:20,324 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birthday
+15:57:20,325 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : company
+15:57:20,325 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : department
+15:57:20,325 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : email
+15:57:20,325 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : fixedAreaId
+15:57:20,325 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : mobilePhone
+15:57:20,325 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : password
+15:57:20,326 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : position
+15:57:20,326 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : sex
+15:57:20,326 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : telephone
+15:57:20,326 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : type
+15:57:20,326 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : username
+15:57:20,327 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:76 - Building LoadPlan...
+15:57:20,346 DEBUG LoadQueryJoinAndFetchProcessor:95 - processing queryspace <gen:0>
+15:57:20,352 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.vincent.crm.domain.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.vincent.crm.domain.Customer, querySpaceUid=<gen:0>, path=com.vincent.crm.domain.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.vincent.crm.domain.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {C_ID1_0_0_}
+
+15:57:20,354 DEBUG EntityLoader:128 - Static select for entity com.vincent.crm.domain.Customer [NONE]: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=?
+15:57:20,355 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@bcd401]
+15:57:20,355 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : address
+15:57:20,355 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birthday
+15:57:20,356 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : company
+15:57:20,356 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : department
+15:57:20,356 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : email
+15:57:20,356 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : fixedAreaId
+15:57:20,356 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : mobilePhone
+15:57:20,356 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : password
+15:57:20,357 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : position
+15:57:20,357 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : sex
+15:57:20,357 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : telephone
+15:57:20,357 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : type
+15:57:20,357 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : username
+15:57:20,358 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:76 - Building LoadPlan...
+15:57:20,358 DEBUG LoadQueryJoinAndFetchProcessor:95 - processing queryspace <gen:0>
+15:57:20,358 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.vincent.crm.domain.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.vincent.crm.domain.Customer, querySpaceUid=<gen:0>, path=com.vincent.crm.domain.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.vincent.crm.domain.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {C_ID1_0_0_}
+
+15:57:20,358 DEBUG EntityLoader:128 - Static select for entity com.vincent.crm.domain.Customer [READ]: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=?
+15:57:20,359 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4dee00]
+15:57:20,359 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : address
+15:57:20,359 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birthday
+15:57:20,359 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : company
+15:57:20,359 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : department
+15:57:20,360 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : email
+15:57:20,360 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : fixedAreaId
+15:57:20,360 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : mobilePhone
+15:57:20,360 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : password
+15:57:20,360 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : position
+15:57:20,360 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : sex
+15:57:20,361 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : telephone
+15:57:20,361 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : type
+15:57:20,361 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : username
+15:57:20,361 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:76 - Building LoadPlan...
+15:57:20,362 DEBUG LoadQueryJoinAndFetchProcessor:95 - processing queryspace <gen:0>
+15:57:20,362 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.vincent.crm.domain.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.vincent.crm.domain.Customer, querySpaceUid=<gen:0>, path=com.vincent.crm.domain.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.vincent.crm.domain.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {C_ID1_0_0_}
+
+15:57:20,363 DEBUG EntityLoader:128 - Static select for entity com.vincent.crm.domain.Customer [UPGRADE]: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=? for update
+15:57:20,363 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@52e7ad]
+15:57:20,363 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : address
+15:57:20,363 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birthday
+15:57:20,363 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : company
+15:57:20,364 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : department
+15:57:20,364 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : email
+15:57:20,364 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : fixedAreaId
+15:57:20,364 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : mobilePhone
+15:57:20,364 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : password
+15:57:20,365 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : position
+15:57:20,365 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : sex
+15:57:20,365 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : telephone
+15:57:20,365 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : type
+15:57:20,365 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : username
+15:57:20,365 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:76 - Building LoadPlan...
+15:57:20,366 DEBUG LoadQueryJoinAndFetchProcessor:95 - processing queryspace <gen:0>
+15:57:20,366 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.vincent.crm.domain.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.vincent.crm.domain.Customer, querySpaceUid=<gen:0>, path=com.vincent.crm.domain.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.vincent.crm.domain.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {C_ID1_0_0_}
+
+15:57:20,366 DEBUG EntityLoader:128 - Static select for entity com.vincent.crm.domain.Customer [UPGRADE_NOWAIT]: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=? for update nowait
+15:57:20,367 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@18289ae]
+15:57:20,367 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : address
+15:57:20,367 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birthday
+15:57:20,367 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : company
+15:57:20,367 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : department
+15:57:20,368 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : email
+15:57:20,368 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : fixedAreaId
+15:57:20,368 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : mobilePhone
+15:57:20,368 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : password
+15:57:20,368 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : position
+15:57:20,368 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : sex
+15:57:20,369 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : telephone
+15:57:20,369 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : type
+15:57:20,369 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : username
+15:57:20,369 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:76 - Building LoadPlan...
+15:57:20,370 DEBUG LoadQueryJoinAndFetchProcessor:95 - processing queryspace <gen:0>
+15:57:20,370 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.vincent.crm.domain.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.vincent.crm.domain.Customer, querySpaceUid=<gen:0>, path=com.vincent.crm.domain.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.vincent.crm.domain.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {C_ID1_0_0_}
+
+15:57:20,370 DEBUG EntityLoader:128 - Static select for entity com.vincent.crm.domain.Customer [UPGRADE_SKIPLOCKED]: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=? for update skip locked
+15:57:20,370 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1f1092f]
+15:57:20,371 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : address
+15:57:20,371 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birthday
+15:57:20,371 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : company
+15:57:20,371 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : department
+15:57:20,371 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : email
+15:57:20,371 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : fixedAreaId
+15:57:20,372 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : mobilePhone
+15:57:20,372 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : password
+15:57:20,372 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : position
+15:57:20,372 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : sex
+15:57:20,372 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : telephone
+15:57:20,373 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : type
+15:57:20,373 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : username
+15:57:20,373 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:76 - Building LoadPlan...
+15:57:20,373 DEBUG LoadQueryJoinAndFetchProcessor:95 - processing queryspace <gen:0>
+15:57:20,374 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.vincent.crm.domain.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.vincent.crm.domain.Customer, querySpaceUid=<gen:0>, path=com.vincent.crm.domain.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.vincent.crm.domain.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {C_ID1_0_0_}
+
+15:57:20,374 DEBUG EntityLoader:128 - Static select for entity com.vincent.crm.domain.Customer [FORCE]: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=? for update nowait
+15:57:20,374 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@b10a51]
+15:57:20,374 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : address
+15:57:20,375 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birthday
+15:57:20,375 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : company
+15:57:20,375 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : department
+15:57:20,375 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : email
+15:57:20,375 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : fixedAreaId
+15:57:20,375 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : mobilePhone
+15:57:20,376 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : password
+15:57:20,376 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : position
+15:57:20,376 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : sex
+15:57:20,376 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : telephone
+15:57:20,376 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : type
+15:57:20,376 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : username
+15:57:20,377 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:76 - Building LoadPlan...
+15:57:20,377 DEBUG LoadQueryJoinAndFetchProcessor:95 - processing queryspace <gen:0>
+15:57:20,377 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.vincent.crm.domain.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.vincent.crm.domain.Customer, querySpaceUid=<gen:0>, path=com.vincent.crm.domain.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.vincent.crm.domain.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {C_ID1_0_0_}
+
+15:57:20,378 DEBUG EntityLoader:128 - Static select for entity com.vincent.crm.domain.Customer [PESSIMISTIC_READ]: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=? for update
+15:57:20,378 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@f61e66]
+15:57:20,378 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : address
+15:57:20,378 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birthday
+15:57:20,378 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : company
+15:57:20,379 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : department
+15:57:20,379 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : email
+15:57:20,379 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : fixedAreaId
+15:57:20,379 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : mobilePhone
+15:57:20,379 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : password
+15:57:20,379 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : position
+15:57:20,380 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : sex
+15:57:20,380 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : telephone
+15:57:20,380 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : type
+15:57:20,380 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : username
+15:57:20,380 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:76 - Building LoadPlan...
+15:57:20,381 DEBUG LoadQueryJoinAndFetchProcessor:95 - processing queryspace <gen:0>
+15:57:20,381 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.vincent.crm.domain.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.vincent.crm.domain.Customer, querySpaceUid=<gen:0>, path=com.vincent.crm.domain.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.vincent.crm.domain.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {C_ID1_0_0_}
+
+15:57:20,381 DEBUG EntityLoader:128 - Static select for entity com.vincent.crm.domain.Customer [PESSIMISTIC_WRITE]: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=? for update
+15:57:20,381 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@18d6244]
+15:57:20,382 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : address
+15:57:20,382 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birthday
+15:57:20,382 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : company
+15:57:20,382 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : department
+15:57:20,382 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : email
+15:57:20,383 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : fixedAreaId
+15:57:20,383 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : mobilePhone
+15:57:20,383 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : password
+15:57:20,383 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : position
+15:57:20,383 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : sex
+15:57:20,383 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : telephone
+15:57:20,384 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : type
+15:57:20,384 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : username
+15:57:20,384 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:76 - Building LoadPlan...
+15:57:20,384 DEBUG LoadQueryJoinAndFetchProcessor:95 - processing queryspace <gen:0>
+15:57:20,385 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.vincent.crm.domain.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.vincent.crm.domain.Customer, querySpaceUid=<gen:0>, path=com.vincent.crm.domain.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.vincent.crm.domain.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {C_ID1_0_0_}
+
+15:57:20,385 DEBUG EntityLoader:128 - Static select for entity com.vincent.crm.domain.Customer [PESSIMISTIC_FORCE_INCREMENT]: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=? for update nowait
+15:57:20,385 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@b91efd]
+15:57:20,385 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : address
+15:57:20,386 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birthday
+15:57:20,386 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : company
+15:57:20,386 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : department
+15:57:20,386 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : email
+15:57:20,386 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : fixedAreaId
+15:57:20,387 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : mobilePhone
+15:57:20,387 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : password
+15:57:20,387 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : position
+15:57:20,387 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : sex
+15:57:20,387 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : telephone
+15:57:20,388 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : type
+15:57:20,388 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : username
+15:57:20,388 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:76 - Building LoadPlan...
+15:57:20,388 DEBUG LoadQueryJoinAndFetchProcessor:95 - processing queryspace <gen:0>
+15:57:20,389 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.vincent.crm.domain.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.vincent.crm.domain.Customer, querySpaceUid=<gen:0>, path=com.vincent.crm.domain.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.vincent.crm.domain.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {C_ID1_0_0_}
+
+15:57:20,389 DEBUG EntityLoader:128 - Static select for entity com.vincent.crm.domain.Customer [OPTIMISTIC]: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=?
+15:57:20,389 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@935ee]
+15:57:20,389 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : address
+15:57:20,390 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : birthday
+15:57:20,390 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : company
+15:57:20,390 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : department
+15:57:20,390 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : email
+15:57:20,390 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : fixedAreaId
+15:57:20,390 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : mobilePhone
+15:57:20,391 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : password
+15:57:20,391 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : position
+15:57:20,391 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : sex
+15:57:20,391 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : telephone
+15:57:20,391 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : type
+15:57:20,392 DEBUG MetamodelGraphWalker:137 - Visiting attribute path : username
+15:57:20,392 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:76 - Building LoadPlan...
+15:57:20,392 DEBUG LoadQueryJoinAndFetchProcessor:95 - processing queryspace <gen:0>
+15:57:20,393 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=com.vincent.crm.domain.Customer)
+    - Returns
+       - EntityReturnImpl(entity=com.vincent.crm.domain.Customer, querySpaceUid=<gen:0>, path=com.vincent.crm.domain.Customer)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.vincent.crm.domain.Customer)
+          - SQL table alias mapping - customer0_
+          - alias suffix - 0_
+          - suffixed key columns - {C_ID1_0_0_}
+
+15:57:20,393 DEBUG EntityLoader:128 - Static select for entity com.vincent.crm.domain.Customer [OPTIMISTIC_FORCE_INCREMENT]: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=?
+15:57:20,414 DEBUG Loader:38 - Static select for action ACTION_MERGE on entity com.vincent.crm.domain.Customer: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=?
+15:57:20,415 DEBUG Loader:38 - Static select for action ACTION_REFRESH on entity com.vincent.crm.domain.Customer: select customer0_.C_ID as C_ID1_0_0_, customer0_.C_ADDRESS as C_ADDRESS2_0_0_, customer0_.C_BRITHDAY as C_BRITHDAY3_0_0_, customer0_.C_COMPANY as C_COMPANY4_0_0_, customer0_.C_DEPARTMENT as C_DEPARTMENT5_0_0_, customer0_.C_EMAIL as C_EMAIL6_0_0_, customer0_.C_Fixed_AREA_ID as C_Fixed_AREA_ID7_0_0_, customer0_.C_MOBILEPHONE as C_MOBILEPHONE8_0_0_, customer0_.C_PASSWORD as C_PASSWORD9_0_0_, customer0_.C_POSITION as C_POSITION10_0_0_, customer0_.C_SEX as C_SEX11_0_0_, customer0_.C_TELEPHONE as C_TELEPHONE12_0_0_, customer0_.C_TYPE as C_TYPE13_0_0_, customer0_.C_USERNAME as C_USERNAME14_0_0_ from T_CUSTOMER customer0_ where customer0_.C_ID=?
+15:57:20,415 DEBUG SessionFactoryImpl:451 - Instantiated session factory
+15:57:20,417 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@143fb8 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@10f722e)
+15:57:20,420 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@143fb8 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@10f722e)
+15:57:20,424  INFO SchemaUpdate:105 - HHH000228: Running hbm2ddl schema update
+15:57:20,437 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@143fb8 [managed: 3, unused: 2, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@10f722e)
+15:57:20,570 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@143fb8 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@10f722e)
+15:57:20,647 DEBUG Table:505 - No alter strings for table : T_CUSTOMER
+15:57:20,652 DEBUG BasicResourcePool:1644 - trace com.mchange.v2.resourcepool.BasicResourcePool@143fb8 [managed: 3, unused: 1, excluded: 0] (e.g. com.mchange.v2.c3p0.impl.NewPooledConnection@10f722e)
+15:57:20,652 DEBUG JtaPlatformInitiator:42 - No JtaPlatform was specified, checking resolver
+15:57:20,653 DEBUG JtaPlatformResolverInitiator:33 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+15:57:20,664 DEBUG StandardJtaPlatformResolver:101 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:57:20,666 DEBUG NamedQueryRepository:149 - Checking 0 named HQL queries
+15:57:20,666 DEBUG NamedQueryRepository:165 - Checking 0 named SQL queries
+15:57:20,669 DEBUG SessionFactoryRegistry:52 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@d17ff5
+15:57:20,669 DEBUG SessionFactoryRegistry:74 - Registering SessionFactory: 7b4e1940-510d-4b67-952e-f08080a889fd (<unnamed>)
+15:57:20,669 DEBUG SessionFactoryRegistry:81 - Not binding SessionFactory to JNDI, no JNDI name configured
+15:57:20,673 DEBUG JpaSchemaGenerator:106 - No actions specified; doing nothing
+15:57:20,726 DEBUG EntityManagerFactoryRegistry:39 - Initializing EntityManagerFactoryRegistry : org.hibernate.jpa.internal.EntityManagerFactoryRegistry@76caad
+15:57:20,726 DEBUG EntityManagerFactoryRegistry:49 - Registering EntityManagerFactory: default 
+15:57:20,730 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:20,731 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'entityManagerFactory'
+15:57:20,731 DEBUG DefaultListableBeanFactory:741 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@bbf022: defining beans [dataSource,entityManagerFactory,transactionManager,customerServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,org.springframework.data.jpa.repository.config.JpaRepositoryConfigExtension#0,org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport_Predictor,emBeanDefinitionRegistrarPostProcessor,jpaMappingContext,jpaContext,customerRepository,org.apache.cxf.jaxrs.spring.JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean---1359393979,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,org.springframework.orm.jpa.SharedEntityManagerCreator#0]; root of factory hierarchy
+15:57:20,731 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'dataSource'
+15:57:20,731 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'entityManagerFactory'
+15:57:20,732 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'transactionManager'
+15:57:20,732 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'transactionManager'
+15:57:20,740 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+15:57:20,746 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'entityManagerFactory'
+15:57:20,746 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:20,749 DEBUG DefaultListableBeanFactory:1620 - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+15:57:20,751 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:20,751 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'transactionManager'
+15:57:20,752 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'customerServiceImpl'
+15:57:20,752 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'customerServiceImpl'
+15:57:20,755 DEBUG InjectionMetadata:72 - Registered injected element on class [com.vincent.crm.service.impl.CustomerServiceImpl]: AutowiredFieldElement for private com.vincent.crm.dao.CustomerRepository com.vincent.crm.service.impl.CustomerServiceImpl.customerRepository
+15:57:20,755 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'customerServiceImpl' to allow for resolving potential circular references
+15:57:20,758 DEBUG InjectionMetadata:86 - Processing injected element of bean 'customerServiceImpl': AutowiredFieldElement for private com.vincent.crm.dao.CustomerRepository com.vincent.crm.service.impl.CustomerServiceImpl.customerRepository
+15:57:20,760 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'customerRepository'
+15:57:20,760 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'customerRepository'
+15:57:20,780 DEBUG InjectionMetadata:72 - Registered injected element on class [org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean]: PersistenceElement for public void org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.setEntityManager(javax.persistence.EntityManager)
+15:57:20,781 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'customerRepository' to allow for resolving potential circular references
+15:57:20,781 DEBUG InjectionMetadata:86 - Processing injected element of bean 'customerRepository': PersistenceElement for public void org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.setEntityManager(javax.persistence.EntityManager)
+15:57:20,782 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean '(inner bean)#18a90c8'
+15:57:20,783 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean '(inner bean)#e2f9b4'
+15:57:20,790 DEBUG DefaultListableBeanFactory:1620 - Invoking afterPropertiesSet() on bean with name '(inner bean)#e2f9b4'
+15:57:20,790 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:20,791 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean '(inner bean)#e2f9b4'
+15:57:20,791 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:20,796 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:20,797 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean '(inner bean)#18a90c8'
+15:57:20,797 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean '(inner bean)#19d7019'
+15:57:20,803 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:20,803 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean '(inner bean)#19d7019'
+15:57:20,804 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean '(inner bean)#190cd6e'
+15:57:20,804 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'entityManagerFactory'
+15:57:20,819 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:20,821 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean '(inner bean)#190cd6e'
+15:57:20,821 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'jpaMappingContext'
+15:57:20,821 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'jpaMappingContext'
+15:57:20,822 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'jpaMappingContext' to allow for resolving potential circular references
+15:57:20,827 DEBUG DefaultListableBeanFactory:1620 - Invoking afterPropertiesSet() on bean with name 'jpaMappingContext'
+15:57:20,828 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:20,829 DEBUG DefaultListableBeanFactory:247 - Returning eagerly cached instance of singleton bean 'jpaMappingContext' that is not fully initialized yet - a consequence of a circular reference
+15:57:20,829 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'entityManagerFactory'
+15:57:20,864 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'jpaMappingContext'
+15:57:20,864 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:20,868 DEBUG DefaultListableBeanFactory:1620 - Invoking afterPropertiesSet() on bean with name 'customerRepository'
+15:57:20,875 DEBUG SharedEntityManagerCreator$SharedEntityManagerInvocationHandler:284 - Creating new EntityManager for shared EntityManager invocation
+15:57:20,956 DEBUG StatisticsInitiator:82 - Statistics initialized [enabled=false]
+15:57:20,962 DEBUG EntityManagerFactoryUtils:435 - Closing JPA EntityManager
+15:57:20,964 DEBUG SharedEntityManagerCreator$SharedEntityManagerInvocationHandler:284 - Creating new EntityManager for shared EntityManager invocation
+15:57:20,964 DEBUG EntityManagerFactoryUtils:435 - Closing JPA EntityManager
+15:57:20,988 DEBUG SharedEntityManagerCreator$SharedEntityManagerInvocationHandler:284 - Creating new EntityManager for shared EntityManager invocation
+15:57:20,988 DEBUG EntityManagerFactoryUtils:435 - Closing JPA EntityManager
+15:57:20,993 DEBUG JdkDynamicAopProxy:117 - Creating JDK dynamic proxy: target source is org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$ThreadBoundTargetSource@5d80a1
+15:57:21,014 DEBUG SharedEntityManagerCreator$SharedEntityManagerInvocationHandler:284 - Creating new EntityManager for shared EntityManager invocation
+15:57:21,015 DEBUG EntityManagerFactoryUtils:435 - Closing JPA EntityManager
+15:57:21,040 DEBUG JpaQueryFactory:52 - Looking up query for method unbindCustomer
+15:57:21,073 DEBUG QueryTranslatorFactoryInitiator:45 - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@3a244f
+15:57:21,074  INFO QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+15:57:21,116 DEBUG QueryTranslatorImpl:278 - parse() - HQL: update com.vincent.crm.domain.Customer set fixedAreaId=null where fixedAreaId=?
+15:57:21,123 DEBUG QueryTranslatorImpl:296 - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     \-[DOT] Node: '.'
+    |        +-[DOT] Node: '.'
+    |        |  +-[DOT] Node: '.'
+    |        |  |  +-[DOT] Node: '.'
+    |        |  |  |  +-[IDENT] Node: 'com'
+    |        |  |  |  \-[IDENT] Node: 'vincent'
+    |        |  |  \-[IDENT] Node: 'crm'
+    |        |  \-[IDENT] Node: 'domain'
+    |        \-[IDENT] Node: 'Customer'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[IDENT] Node: 'fixedAreaId'
+    |     \-[NULL] Node: 'null'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'fixedAreaId'
+          \-[PARAM] Node: '?'
+
+15:57:21,124 DEBUG ErrorCounter:95 - throwQueryException() : no errors
+15:57:21,151 DEBUG HqlSqlBaseWalker:124 - update << begin [level=1, statement=update]
+15:57:21,304 DEBUG FromElement:146 - FromClause{level=1} : com.vincent.crm.domain.Customer (<no alias>) -> customer0_
+15:57:21,307 DEBUG FromReferenceNode:60 - Resolved : {synthetic-alias} -> {synthetic-alias}
+15:57:21,308 DEBUG DotNode:661 - getDataType() : fixedAreaId -> org.hibernate.type.StringType@15bce
+15:57:21,309 DEBUG FromReferenceNode:60 - Resolved : {synthetic-alias}.fixedAreaId -> C_Fixed_AREA_ID
+15:57:21,310 DEBUG FromReferenceNode:60 - Resolved : {synthetic-alias} -> {synthetic-alias}
+15:57:21,310 DEBUG DotNode:661 - getDataType() : fixedAreaId -> org.hibernate.type.StringType@15bce
+15:57:21,310 DEBUG FromReferenceNode:60 - Resolved : {synthetic-alias}.fixedAreaId -> C_Fixed_AREA_ID
+15:57:21,311  WARN HqlSqlWalker:992 - [DEPRECATION] Encountered positional parameter near line 1, column 79 in HQL: [update com.vincent.crm.domain.Customer set fixedAreaId=null where fixedAreaId=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+15:57:21,313 DEBUG HqlSqlBaseWalker:128 - update : finishing up [level=1, statement=update]
+15:57:21,313 DEBUG HqlSqlBaseWalker:132 - update >> end [level=1, statement=update]
+15:57:21,314 DEBUG QueryTranslatorImpl:265 - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (T_CUSTOMER)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[customer0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'T_CUSTOMER' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=T_CUSTOMER,tableAlias=customer0_,origin=null,columns={,className=com.vincent.crm.domain.Customer}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 'C_Fixed_AREA_ID' {propertyName=fixedAreaId,dereferenceType=PRIMITIVE,getPropertyPath=fixedAreaId,path={synthetic-alias}.fixedAreaId,tableAlias=customer0_,className=com.vincent.crm.domain.Customer,classAlias=null}
+    |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+    |     |  \-[IDENT] IdentNode: 'fixedAreaId' {originalText=fixedAreaId}
+    |     \-[NULL] SqlNode: 'null'
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'C_Fixed_AREA_ID' {propertyName=fixedAreaId,dereferenceType=PRIMITIVE,getPropertyPath=fixedAreaId,path={synthetic-alias}.fixedAreaId,tableAlias=customer0_,className=com.vincent.crm.domain.Customer,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'fixedAreaId' {originalText=fixedAreaId}
+          \-[PARAM] ParameterNode: '?' {ordinal=0, expectedType=org.hibernate.type.StringType@15bce}
+
+15:57:21,314 DEBUG ErrorCounter:95 - throwQueryException() : no errors
+15:57:21,323 DEBUG ErrorCounter:95 - throwQueryException() : no errors
+15:57:21,331 DEBUG JpaQueryFactory:52 - Looking up query for method bindCustomer
+15:57:21,333 DEBUG QueryTranslatorImpl:278 - parse() - HQL: update com.vincent.crm.domain.Customer set fixedAreaId=? where id=?
+15:57:21,334 DEBUG QueryTranslatorImpl:296 - --- HQL AST ---
+ \-[UPDATE] Node: 'update'
+    +-[FROM] Node: 'FROM'
+    |  \-[RANGE] Node: 'RANGE'
+    |     \-[DOT] Node: '.'
+    |        +-[DOT] Node: '.'
+    |        |  +-[DOT] Node: '.'
+    |        |  |  +-[DOT] Node: '.'
+    |        |  |  |  +-[IDENT] Node: 'com'
+    |        |  |  |  \-[IDENT] Node: 'vincent'
+    |        |  |  \-[IDENT] Node: 'crm'
+    |        |  \-[IDENT] Node: 'domain'
+    |        \-[IDENT] Node: 'Customer'
+    +-[SET] Node: 'set'
+    |  \-[EQ] Node: '='
+    |     +-[IDENT] Node: 'fixedAreaId'
+    |     \-[PARAM] Node: '?'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'id'
+          \-[PARAM] Node: '?'
+
+15:57:21,334 DEBUG ErrorCounter:95 - throwQueryException() : no errors
+15:57:21,335 DEBUG HqlSqlBaseWalker:124 - update << begin [level=1, statement=update]
+15:57:21,335 DEBUG FromElement:146 - FromClause{level=1} : com.vincent.crm.domain.Customer (<no alias>) -> customer0_
+15:57:21,336 DEBUG FromReferenceNode:60 - Resolved : {synthetic-alias} -> {synthetic-alias}
+15:57:21,336 DEBUG DotNode:661 - getDataType() : fixedAreaId -> org.hibernate.type.StringType@15bce
+15:57:21,336 DEBUG FromReferenceNode:60 - Resolved : {synthetic-alias}.fixedAreaId -> C_Fixed_AREA_ID
+15:57:21,337  WARN HqlSqlWalker:992 - [DEPRECATION] Encountered positional parameter near line 1, column 56 in HQL: [update com.vincent.crm.domain.Customer set fixedAreaId=? where id=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+15:57:21,337 DEBUG FromReferenceNode:60 - Resolved : {synthetic-alias} -> {synthetic-alias}
+15:57:21,337 DEBUG DotNode:661 - getDataType() : id -> org.hibernate.type.LongType@19cceab
+15:57:21,337 DEBUG FromReferenceNode:60 - Resolved : {synthetic-alias}.id -> C_ID
+15:57:21,338  WARN HqlSqlWalker:992 - [DEPRECATION] Encountered positional parameter near line 1, column 67 in HQL: [update com.vincent.crm.domain.Customer set fixedAreaId=? where id=?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+15:57:21,338 DEBUG HqlSqlBaseWalker:128 - update : finishing up [level=1, statement=update]
+15:57:21,338 DEBUG HqlSqlBaseWalker:132 - update >> end [level=1, statement=update]
+15:57:21,339 DEBUG QueryTranslatorImpl:265 - --- SQL AST ---
+ \-[UPDATE] UpdateStatement: 'update'  querySpaces (T_CUSTOMER)
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[customer0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'T_CUSTOMER' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=T_CUSTOMER,tableAlias=customer0_,origin=null,columns={,className=com.vincent.crm.domain.Customer}}
+    +-[SET] SqlNode: 'set'
+    |  \-[EQ] BinaryLogicOperatorNode: '='
+    |     +-[DOT] DotNode: 'C_Fixed_AREA_ID' {propertyName=fixedAreaId,dereferenceType=PRIMITIVE,getPropertyPath=fixedAreaId,path={synthetic-alias}.fixedAreaId,tableAlias=customer0_,className=com.vincent.crm.domain.Customer,classAlias=null}
+    |     |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+    |     |  \-[IDENT] IdentNode: 'fixedAreaId' {originalText=fixedAreaId}
+    |     \-[PARAM] ParameterNode: '?' {ordinal=0, expectedType=org.hibernate.type.StringType@15bce}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'C_ID' {propertyName=id,dereferenceType=PRIMITIVE,getPropertyPath=id,path={synthetic-alias}.id,tableAlias=customer0_,className=com.vincent.crm.domain.Customer,classAlias=null}
+          |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  \-[IDENT] IdentNode: 'id' {originalText=id}
+          \-[PARAM] ParameterNode: '?' {ordinal=1, expectedType=org.hibernate.type.LongType@19cceab}
+
+15:57:21,339 DEBUG ErrorCounter:95 - throwQueryException() : no errors
+15:57:21,339 DEBUG ErrorCounter:95 - throwQueryException() : no errors
+15:57:21,340 DEBUG JpaQueryFactory:52 - Looking up query for method findByFixedAreaIdIsNull
+15:57:21,342 DEBUG NamedQuery:119 - Looking up named query Customer.findByFixedAreaIdIsNull
+15:57:21,343 DEBUG AbstractEntityManagerImpl:1494 - Mark transaction for rollback
+15:57:21,343 DEBUG NamedQuery:102 - Did not find named query Customer.findByFixedAreaIdIsNull
+15:57:21,381 DEBUG JpaQueryFactory:52 - Looking up query for method findByFixedAreaId
+15:57:21,382 DEBUG NamedQuery:119 - Looking up named query Customer.findByFixedAreaId
+15:57:21,382 DEBUG AbstractEntityManagerImpl:1494 - Mark transaction for rollback
+15:57:21,382 DEBUG NamedQuery:102 - Did not find named query Customer.findByFixedAreaId
+15:57:21,388 DEBUG JdkDynamicAopProxy:117 - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [org.springframework.data.jpa.repository.support.SimpleJpaRepository@1e51920]
+15:57:21,394 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:21,395 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'customerRepository'
+15:57:21,395 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:21,396 DEBUG AutowiredAnnotationBeanPostProcessor:492 - Autowiring by type from bean name 'customerServiceImpl' to bean named 'customerRepository'
+15:57:21,396 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:21,401 DEBUG AnnotationTransactionAttributeSource:108 - Adding transactional method 'CustomerServiceImpl.findAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+15:57:21,402 DEBUG InfrastructureAdvisorAutoProxyCreator:526 - Creating implicit proxy for bean 'customerServiceImpl' with 0 common interceptors and 1 specific interceptors
+15:57:21,403 DEBUG JdkDynamicAopProxy:117 - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.vincent.crm.service.impl.CustomerServiceImpl@1bcaf4]
+15:57:21,405 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'customerServiceImpl'
+15:57:21,405 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+15:57:21,406 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+15:57:21,406 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+15:57:21,406 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+15:57:21,406 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+15:57:21,406 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+15:57:21,406 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+15:57:21,408 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+15:57:21,410 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:21,410 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+15:57:21,411 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+15:57:21,411 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+15:57:21,411 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+15:57:21,414 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:21,414 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+15:57:21,414 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+15:57:21,414 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+15:57:21,415 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' to allow for resolving potential circular references
+15:57:21,417 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:21,418 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+15:57:21,418 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+15:57:21,418 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+15:57:21,418 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+15:57:21,418 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+15:57:21,420 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+15:57:21,424 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+15:57:21,425 DEBUG DefaultListableBeanFactory:1620 - Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+15:57:21,425 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+15:57:21,425 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:21,425 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport_Predictor'
+15:57:21,425 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'emBeanDefinitionRegistrarPostProcessor'
+15:57:21,425 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'jpaMappingContext'
+15:57:21,426 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'jpaContext'
+15:57:21,426 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'jpaContext'
+15:57:21,428 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.springframework.orm.jpa.SharedEntityManagerCreator#0'
+15:57:21,428 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.springframework.orm.jpa.SharedEntityManagerCreator#0'
+15:57:21,428 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'entityManagerFactory'
+15:57:21,429 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.springframework.orm.jpa.SharedEntityManagerCreator#0' to allow for resolving potential circular references
+15:57:21,429 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:21,430 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.springframework.orm.jpa.SharedEntityManagerCreator#0'
+15:57:21,430 DEBUG DefaultListableBeanFactory:757 - Autowiring by type from bean name 'jpaContext' via constructor to bean named 'org.springframework.orm.jpa.SharedEntityManagerCreator#0'
+15:57:21,431 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'jpaContext' to allow for resolving potential circular references
+15:57:21,433 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:21,433 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'jpaContext'
+15:57:21,434 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'customerRepository'
+15:57:21,434 DEBUG DefaultListableBeanFactory:221 - Creating shared instance of singleton bean 'org.apache.cxf.jaxrs.spring.JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean---1359393979'
+15:57:21,434 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.apache.cxf.jaxrs.spring.JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean---1359393979'
+15:57:21,459 DEBUG DefaultListableBeanFactory:529 - Eagerly caching bean 'org.apache.cxf.jaxrs.spring.JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean---1359393979' to allow for resolving potential circular references
+15:57:21,477 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'customerServiceImpl'
+15:57:21,478 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.apache.cxf.interceptor.LoggingInInterceptor#10b07b9'
+15:57:21,500 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:21,502 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.apache.cxf.interceptor.LoggingInInterceptor#10b07b9'
+15:57:21,502 DEBUG DefaultListableBeanFactory:448 - Creating instance of bean 'org.apache.cxf.interceptor.LoggingOutInterceptor#1283fbd'
+15:57:21,508 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:21,509 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.apache.cxf.interceptor.LoggingOutInterceptor#1283fbd'
+15:57:21,716 DEBUG ConfigurerImpl:452 - Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyDataEngineImpl.
+15:57:21,717 DEBUG ConfigurerImpl:452 - Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyAnnotationListener.
+15:57:21,718 DEBUG ConfigurerImpl:452 - Could not determine bean name for instance of class org.apache.cxf.service.factory.FactoryBeanListenerManager.
+15:57:21,723 DEBUG ConfigurerImpl:452 - Could not determine bean name for instance of class org.apache.cxf.ws.policy.PolicyEngineImpl.
+15:57:21,724 DEBUG ConfigurerImpl:452 - Could not determine bean name for instance of class org.apache.cxf.bus.managers.CXFBusLifeCycleManager.
+15:57:21,725 DEBUG ConfigurerImpl:452 - Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerRegistryImpl.
+15:57:21,725 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'cxf'
+15:57:21,725 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'cxf'
+15:57:21,747 DEBUG ConfigurerImpl:452 - Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapBindingFactory.
+15:57:21,748 DEBUG ConfigurerImpl:452 - Could not determine bean name for instance of class org.apache.cxf.binding.xml.XMLBindingFactory.
+15:57:21,750 DEBUG DefaultListableBeanFactory:1678 - Invoking init method  'create' on bean with name 'org.apache.cxf.jaxrs.spring.JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean---1359393979'
+15:57:21,787 DEBUG ConfigurerImpl:452 - Could not determine bean name for instance of class org.apache.cxf.binding.soap.SoapTransportFactory.
+15:57:21,793 DEBUG ConfigurerImpl:452 - Could not determine bean name for instance of class org.apache.cxf.transport.http.HTTPTransportFactory.
+15:57:21,845 DEBUG ConfigurerImpl:179 - Could not find a definition for bean with id {http://impl.service.crm.vincent.com/}CustomerServiceImpl.http-destination - no injection will be performed.
+15:57:21,846  INFO ServerImpl:85 - Setting the server's publish address to be /customerService
+15:57:21,848 DEBUG ConfigurerImpl:452 - Could not determine bean name for instance of class org.apache.cxf.bus.managers.ServerLifeCycleManagerImpl.
+15:57:21,861 DEBUG ProviderFactory:160 - Problem with creating the default provider org.apache.cxf.jaxrs.model.wadl.WadlGenerator: org.apache.cxf.jaxrs.model.wadl.WadlGenerator
+15:57:21,904 DEBUG ServerImpl:121 - Server is starting.
+15:57:21,907 DEBUG ServletDestination:46 - registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@cf4026
+15:57:21,907 DEBUG ServerImpl:127 - register the server to serverRegistry 
+15:57:21,908 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+15:57:21,908 DEBUG DefaultListableBeanFactory:484 - Finished creating instance of bean 'org.apache.cxf.jaxrs.spring.JAXRSServerFactoryBeanDefinitionParser$SpringJAXRSServerFactoryBean---1359393979'
+15:57:21,909 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+15:57:21,909 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+15:57:21,909 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.orm.jpa.SharedEntityManagerCreator#0'
+15:57:21,909 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+15:57:21,909 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+15:57:21,940 DEBUG XmlWebApplicationContext:769 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@549bbc]
+15:57:21,940 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'lifecycleProcessor'
+15:57:21,944 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams]
+15:57:21,944 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams]
+15:57:21,945 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [jndiProperties]
+15:57:21,945 DEBUG JndiTemplate:150 - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+15:57:21,946 DEBUG JndiLocatorDelegate:101 - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name spring.liveBeansView.mbeanDomain is not bound in this Context
+15:57:21,946 DEBUG JndiTemplate:150 - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+15:57:21,947 DEBUG JndiPropertySource:90 - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name spring.liveBeansView.mbeanDomain is not bound in this Context. Returning null.
+15:57:21,947 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+15:57:21,947 DEBUG PropertySourcesPropertyResolver:81 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+15:57:21,947 DEBUG PropertySourcesPropertyResolver:103 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+15:57:21,949 DEBUG ContextLoader:342 - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+15:57:21,949  INFO ContextLoader:347 - Root WebApplicationContext: initialization completed in 5094 ms
+15:58:42,975 DEBUG DefaultListableBeanFactory:251 - Returning cached instance of singleton bean 'cxf'
+15:58:42,979 DEBUG DefaultResourceManager:103 - resolving resource </WEB-INF/cxfServletStaticResourcesMap.txt> type <class java.io.InputStream>
+15:58:42,981 DEBUG DefaultResourceManager:103 - resolving resource </cxfServletStaticResourcesMap.txt> type <class java.io.InputStream>

@@ -13,6 +13,7 @@
 
         <module>crm4</module>
         <module>portal</module>
+        <module>middleware</module>
 
     </modules>
 

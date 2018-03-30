@@ -3,12 +3,15 @@ package com.vincent.bos.web.action.base;
 import com.vincent.bos.domain.base.Area;
 import com.vincent.bos.service.base.AreaService;
 import com.vincent.bos.web.action.CommonAction;
+import com.vincent.utils.FileDownloadEncodeNameUtils;
 import com.vincent.utils.PinYin4jUtils;
 import net.sf.json.JsonConfig;
 import org.apache.commons.lang.StringUtils;
+import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Namespace;
 import org.apache.struts2.convention.annotation.ParentPackage;
@@ -20,9 +23,14 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 
+import javax.servlet.ServletContext;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -54,6 +62,7 @@ public class AreaAction extends CommonAction<Area> {
 
  /**
   * 区域分页查询
+  *
   * @return
   * @throws IOException
   */
@@ -73,17 +82,18 @@ public class AreaAction extends CommonAction<Area> {
 
  /**
   * 区域查询,供给增加分区下拉框使用,只需要所有数据,不需要分页效果!
+  *
   * @return
   */
  @Action(value = "areaAction_findAll")
- public String findAll(){
+ public String findAll() {
   try {
-  List<Area> list;
+   List<Area> list;
    System.out.println();
 
-   if(StringUtils.isNotEmpty(q)){
-  list = areaService.findQ(q);
-  }else{
+   if (StringUtils.isNotEmpty(q)) {
+    list = areaService.findQ(q);
+   } else {
 
     Page<Area> pageBean = areaService.findAll(null);
     list = pageBean.getContent();
@@ -91,7 +101,7 @@ public class AreaAction extends CommonAction<Area> {
    JsonConfig jsonConfig = new JsonConfig();
    jsonConfig.setExcludes(new String[]{"subareas"});
 
-   listToJson(list,jsonConfig);
+   listToJson(list, jsonConfig);
 
 
   } catch (IOException e) {
@@ -101,8 +111,10 @@ public class AreaAction extends CommonAction<Area> {
 
   return NONE;
  }
+
  /**
   * 导入区域excel数据
+  *
   * @return
   */
  @Action(value = "areaAction_doImport", results = {@Result(name = "success", location = "pages/base/area.html", type = "redirect")})
@@ -148,5 +160,60 @@ public class AreaAction extends CommonAction<Area> {
   return SUCCESS;
  }
 
+ @Action("areaAction_exportExcel")
+ public String exportExcel() throws IOException {
 
+  //先准备好数据
+  Page<Area> pageBean = areaService.findAll(null);
+  List<Area> list = pageBean.getContent();
+
+  //建表
+  HSSFWorkbook hssfWorkbook = new HSSFWorkbook();
+
+  HSSFSheet sheet = hssfWorkbook.createSheet();
+
+  HSSFRow titleRow = sheet.createRow(0);
+
+  titleRow.createCell(0).setCellValue("省");
+  titleRow.createCell(1).setCellValue("市");
+  titleRow.createCell(2).setCellValue("区");
+  titleRow.createCell(3).setCellValue("邮编");
+  titleRow.createCell(4).setCellValue("简码");
+  titleRow.createCell(5).setCellValue("城市编码");
+
+  int i = 1;
+  for (Area area : list) {
+
+   HSSFRow dataRow = sheet.createRow(i);
+   dataRow.createCell(0).setCellValue(area.getProvince());
+   dataRow.createCell(1).setCellValue(area.getCity());
+   dataRow.createCell(2).setCellValue(area.getDistrict());
+   dataRow.createCell(3).setCellValue(area.getPostcode());
+   dataRow.createCell(4).setCellValue(area.getShortcode());
+   dataRow.createCell(5).setCellValue(area.getCitycode());
+   i++;
+  }
+  //两头一流
+  String fileName = "区域数据统计_gaga.xls";
+
+  HttpServletResponse response = ServletActionContext.getResponse();
+  ServletContext servletContext = ServletActionContext.getServletContext();
+  String mimeType = servletContext.getMimeType(fileName);
+
+
+  HttpServletRequest request = ServletActionContext.getRequest();
+  //处理fileName中文乱码问题
+  fileName = FileDownloadEncodeNameUtils.encodeDownloadFilename(fileName, request.getHeader("User-Agent"));
+
+
+  //两头一流处理
+  ServletOutputStream outputStream = response.getOutputStream();
+  response.setContentType(mimeType);//头1
+  response.setHeader("Content-Disposition", "attachment;fileName=" + fileName);
+
+  hssfWorkbook.write(outputStream); //流
+hssfWorkbook.close();
+
+  return NONE;
+ }
 }

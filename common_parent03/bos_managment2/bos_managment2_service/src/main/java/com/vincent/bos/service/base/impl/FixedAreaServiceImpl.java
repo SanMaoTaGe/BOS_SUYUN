@@ -79,7 +79,7 @@ public class FixedAreaServiceImpl  implements FixedAreaService{
    SubArea subArea = subAreaRepository.findOne(s);
    subArea.setFixedArea(fixedArea1);
   }
- }
+ }/**/
 
 
 }

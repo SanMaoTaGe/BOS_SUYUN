@@ -9,4 +9,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @create 2018-03-21 16:03
  */
 public interface FixedAreaRepository extends JpaRepository<FixedArea,Long> {
+
 }

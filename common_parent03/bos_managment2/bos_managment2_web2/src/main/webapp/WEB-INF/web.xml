@@ -4,11 +4,37 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
     <display-name>Archetype Created Web Application</display-name>
+    <!-- 配置Spring框架提供的过滤器,用于整合shiro框架 -->
+    <!-- 该过滤器必须在Struts过滤器之前 -->
+    <!-- 指定的filter-name,必须在spring框架配置文件中有声明
+        即注册bean时声明的id一定要和filter-name中声明的值保持一致
+    -->
+    <!-- Tomcat启动时,会调用这个过滤器的初始化方法
+        此时会从Sping工厂中获取id为filter-name的bean,
+        如果spring框架配置文件没有注册这个bean,将导致NoSuchBeanDefinitionException -->
+    <filter>
+
+        <filter-name>shirofilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>shirofilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
     <!-- 指定Spring框架配置文件的位置 -->
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
+
+    <servlet>
+        <servlet-name>cxf</servlet-name>
+        <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cxf</servlet-name>
+        <url-pattern>/webService/*</url-pattern>
+    </servlet-mapping>
     <!-- 配置Spring框架的监听器 -->
     <!-- 配置Struts的前端控制器 -->
     <filter>

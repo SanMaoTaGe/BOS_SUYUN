@@ -1,11 +1,9 @@
 package com.vincent.bos.fore.web.action;
 
-import com.aliyuncs.exceptions.ClientException;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import com.vincent.bos.fore.domain.Customer;
 import com.vincent.utils.MailUtils;
-import com.vincent.utils.SmsUtils;
 import org.apache.commons.lang.RandomStringUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.cxf.jaxrs.client.WebClient;
@@ -17,8 +15,14 @@ import org.apache.struts2.convention.annotation.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Controller;
 
+import javax.jms.JMSException;
+import javax.jms.MapMessage;
+import javax.jms.Message;
+import javax.jms.Session;
 import javax.ws.rs.core.MediaType;
 import java.util.concurrent.TimeUnit;
 
@@ -35,15 +39,22 @@ public class CustomerAction extends ActionSupport implements ModelDriven<Custome
 
  private Customer customer = new Customer();
 
+ @Autowired
+ private JmsTemplate jmsTemplate;
+
  @Override
  public Customer getModel() {
   return customer;
  }
 
+ /**
+  * 发送注册验证码
+  * @return
+  */
  @Action(value = "customerAction_sendSMS")
  public String sendSMS() {
 
-  String code = RandomStringUtils.randomNumeric(6);
+  final String code = RandomStringUtils.randomNumeric(6);
 
   System.out.println("code:------->" + code);
   System.out.println("phone:------->" + customer.getTelephone());
@@ -51,11 +62,19 @@ public class CustomerAction extends ActionSupport implements ModelDriven<Custome
   //存入session
   ServletActionContext.getRequest().getSession().setAttribute("ServerCode", code);
 
-  try {
-   SmsUtils.sendSms(customer.getTelephone(), code);
-  } catch (ClientException e) {
-   e.printStackTrace();
-  }
+
+  //SmsUtils.sendSms(customer.getTelephone(), code);
+  jmsTemplate.send("sms_message", new MessageCreator() {
+   @Override
+   public Message createMessage(Session session) throws JMSException {
+    System.out.println("send message to activeMQ------------");
+    MapMessage mapMessage = session.createMapMessage();
+    mapMessage.setString("tel", customer.getTelephone());
+    mapMessage.setString("code", code);
+    return mapMessage;
+   }
+  });
+
   return NONE;
  }
 
@@ -117,7 +136,7 @@ public class CustomerAction extends ActionSupport implements ModelDriven<Custome
    System.out.println("--------------------------通过了激活码的初级验证");
    WebClient.create("http://localhost:8180/webService/customerService/active")
     .type(MediaType.APPLICATION_JSON)
-    .query("telephone",customer.getTelephone())
+    .query("telephone", customer.getTelephone())
     .accept(MediaType.APPLICATION_JSON)
     .put(null);
    return SUCCESS;

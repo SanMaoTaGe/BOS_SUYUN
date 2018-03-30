@@ -6,6 +6,7 @@ import com.vincent.bos.service.base.CourierService;
 import com.vincent.bos.web.action.CommonAction;
 import net.sf.json.JsonConfig;
 import org.apache.commons.lang.StringUtils;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.struts2.convention.annotation.Action;
 import org.apache.struts2.convention.annotation.Namespace;
 import org.apache.struts2.convention.annotation.ParentPackage;
@@ -36,6 +37,12 @@ public class CourierAction extends CommonAction<Courier> {
 
  @Autowired
  private CourierService courierService;
+
+
+ // 二次代理
+ public void setCourierService(CourierService courierService) {
+  this.courierService = courierService;
+ }
 
  private String ids;
 
@@ -79,6 +86,7 @@ public class CourierAction extends CommonAction<Courier> {
   * @return
   * @throws IOException
   */
+ //@RequiresPermissions("pageQuery") // cglib
  @Action(value = "courierAction_pageQuery")
  public String pageQuery() throws IOException {
   Specification<Courier> specification = new Specification<Courier>() {

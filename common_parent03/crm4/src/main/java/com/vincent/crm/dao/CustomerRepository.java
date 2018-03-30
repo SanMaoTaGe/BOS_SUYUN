@@ -34,4 +34,8 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
  Customer findByTelephoneAndPassword(String telephone, String password);
 
  Customer findByTelephone(String telephone);
+
+ // 根据地址查询定区ID
+ @Query("select fixedAreaId from Customer where address = ?")
+ String findFixedAreaIdByAdddress(String address);
 }

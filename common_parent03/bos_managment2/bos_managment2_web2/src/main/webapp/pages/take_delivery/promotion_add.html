@@ -29,7 +29,12 @@
                 //初始化KindEditor控件
             KindEditor.ready(function(K) {
                 window.editor = K.create('#descTextArea', {
-                    uploadJson : '../../imageAction_upload.action'//指定处理图片上传的Action的路径
+                    // 指定处理文件上传的Action地址
+                    uploadJson: '../../imageAction_upload.action',//指定处理图片上传的Action的路径
+                    // 开启图片空间
+                    allowFileManager: true,
+                    // 指定处理图片空间的Action地址
+                    fileManagerJson: "../../imageAction_manager.action"
                 });
             });
 

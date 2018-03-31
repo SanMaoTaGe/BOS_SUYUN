@@ -128,7 +128,7 @@
             anon:代表shiro框架提供的一个过滤器，允许匿名访问
         -->
         <property name="filterChainDefinitions">
-            <!--<value>
+            <value>
                 /css/* = anon
                 /data/* = anon
                 /images/* = anon
@@ -138,10 +138,10 @@
                 /courierAction_pageQuery.action = perms["courierAction_pageQuery"]
                 /hi.html = perms["courierAction_pageQuery"]
                 /** = authc
-            </value>-->
-            <value>
-                /** = anon
             </value>
+            <!--  <value>
+                  /** = anon
+              </value>-->
 
             <!---->
         </property>

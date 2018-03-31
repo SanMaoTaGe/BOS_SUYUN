@@ -90,19 +90,21 @@ public class ImageAction extends ActionSupport {
 
  @Action("imageAction_manager")
  public String manager() throws IOException {
-// 指定保存图片的文件夹
+  // 指定保存图片的文件夹
   String dirPath = "/upload";
-  ServletContext servletContext = ServletActionContext.getServletContext();
+  // D:aa/upload/a.jpg
   // 获取保存图片的文件夹的绝对磁盘路径
-  String realPath = servletContext.getRealPath(dirPath);
+  ServletContext servletContext =
+   ServletActionContext.getServletContext();
+  String dirRealPath = servletContext.getRealPath(dirPath);
 
-  File currentPathFile = new File(dirPath);
-
-//遍历目录获取文件信息
+  File currentPathFile = new File(dirRealPath);
+  // 遍历目录获取文件信息
   List<Hashtable> fileList = new ArrayList<Hashtable>();
   if (currentPathFile.listFiles() != null) {
    for (File file : currentPathFile.listFiles()) {
-    Hashtable<String, Object> hash = new Hashtable<String, Object>();
+    Hashtable<String, Object> hash =
+     new Hashtable<String, Object>();
     String fileName = file.getName();
     if (file.isDirectory()) {
      hash.put("is_dir", true);
@@ -111,28 +113,29 @@ public class ImageAction extends ActionSupport {
      hash.put("is_photo", false);
      hash.put("filetype", "");
     } else if (file.isFile()) {
-     String fileExt = fileName.substring(fileName.lastIndexOf(".") + 1).toLowerCase();
+     String fileExt =
+      fileName.substring(fileName.lastIndexOf(".") + 1)
+       .toLowerCase();
      hash.put("is_dir", false);
      hash.put("has_file", false);
      hash.put("filesize", file.length());
-     hash.put("is_photo", Arrays.<String>asList(fileTypes).contains(fileExt));
+     hash.put("is_photo",
+      Arrays.<String>asList(fileTypes).contains(fileExt));
      hash.put("filetype", fileExt);
     }
     hash.put("filename", fileName);
-    hash.put("datetime", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(file.lastModified()));
+    hash.put("datetime", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+     .format(file.lastModified()));
     fileList.add(hash);
    }
   }
 
   JSONObject result = new JSONObject();
-
   // 获取本项目路径
   String contextPath = servletContext.getContextPath();
-
   result.put("current_url", contextPath + "/upload/");
-  // 把所有的图片信息查询出来,封装在fileList对象的身上
+  // 把所有的图片信息封装在fileList对象的身上
   result.put("file_list", fileList);
-
   HttpServletResponse response = ServletActionContext.getResponse();
   response.setContentType("application/json;charset=UTF-8");
   response.getWriter().write(result.toString());

@@ -39,6 +39,14 @@
             });
 
         });
+
+        function saveData() {
+            if ($("#promotionForm").form("validate")) {
+                alert("000")
+                window.editor.sync();
+                $("#promotionForm").submit();
+            }
+        }
     </script>
 </head>
 <body class="easyui-layout" style="visibility: hidden;">
@@ -46,13 +54,13 @@
      split="false" border="false">
     <div class="datagrid-toolbar">
         <a id="save" icon="icon-save" href="#" class="easyui-linkbutton"
-           plain="true">保存</a> <a id="back" icon="icon-back" href="#"
-                                  class="easyui-linkbutton" plain="true">返回列表</a>
+           plain="true" onclick="saveData()">保存</a> <a id="back" icon="icon-back" href="#"
+                                                       class="easyui-linkbutton" plain="true">返回列表</a>
     </div>
 </div>
 <div region="center" style="overflow: auto; padding: 5px;"
      border="false">
-    <form id="promotionForm" method="post">
+    <form id="promotionForm" method="post" action="../../promotionAction_save.action" enctype="multipart/form-data">
         <table class="table-edit" width="95%" align="center">
             <tr class="title">
                 <td colspan="4">宣传任务</td>

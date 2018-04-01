@@ -108,6 +108,19 @@
             <bean class="org.apache.cxf.interceptor.LoggingOutInterceptor"></bean>
         </jaxrs:outInterceptors>
     </jaxrs:server>
+
+    <jaxrs:server address="/promotionService">
+        <jaxrs:serviceBeans>
+            <ref bean="promotionServiceImpl" />
+        </jaxrs:serviceBeans>
+        <jaxrs:inInterceptors>
+            <bean class="org.apache.cxf.interceptor.LoggingInInterceptor"></bean>
+        </jaxrs:inInterceptors>
+        <jaxrs:outInterceptors>
+            <bean class="org.apache.cxf.interceptor.LoggingOutInterceptor"></bean>
+        </jaxrs:outInterceptors>
+    </jaxrs:server>
+
     <!-- 注册shiro框架的过滤器
 	id一定要和web.xml中声明的DelegatingFilterProxy过滤器名字一致
 -->
@@ -137,7 +150,9 @@
                 /userAction_login.action = anon
                 /courierAction_pageQuery.action = perms["courierAction_pageQuery"]
                 /hi.html = perms["courierAction_pageQuery"]
+                /webService/** = anon
                 /** = authc
+                /upload/* = anon
             </value>
             <!--  <value>
                   /** = anon

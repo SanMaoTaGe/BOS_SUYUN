@@ -22,32 +22,15 @@
         <script src="../../js/easyui/locale/easyui-lang-zh_CN.js"
                 type="text/javascript"></script>
         <script type="text/javascript" src="../../js/jquery.ocupload-1.1.2.js"></script>
+        <script src="../../js/highcharts/highcharts.js"></script>
+        <script src="../../js/highcharts/exporting.js"></script>
+        <script src="../../js/highcharts/highcharts-zh_CN.js"></script>
 
-		<script type="text/javascript">
+
+        <script type="text/javascript">
 			function doAdd(){
 				$('#addWindow').window("open");
                 alert("修改...");
-                alert("修改...");
-                alert("修改...");
-                alert("修改...");
-                valert("修改...");
-                valert("修改...");
-                alert("修改...");
-                alert("修改...");
-                alert("修改...");
-                alert("修改...");
-                alert("修改...");
-                alert("修改...");
-                alert("修改...");
-                alert("修改...");
-                alert("修改...");
-
-
-
-
-
-
-
 			}
 
 
@@ -61,6 +44,44 @@
             function doExportExcel(){
                 window.location.href="../../areaAction_exportExcel.action"
             }
+
+            function doExportChart() {
+                $('#highchartsWindow').window("open")
+                //发起请求查询数据
+                $.post("../../areaAction_exportCharts.action", function (data) {
+                    // 加载HighCharts
+                    $('#container').highcharts({
+
+                        title: {
+                            text: '各省区域数据占比'
+                        },
+                        tooltip: {
+                            headerFormat: '{series.name}<br>',
+                            pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+                        },
+                        plotOptions: {
+                            pie: {
+                                allowPointSelect: true,
+                                cursor: 'pointer',
+                                dataLabels: {
+                                    enabled: true,
+                                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                                    style: {
+                                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                                    }
+                                }
+                            }
+                        },
+                        series: [{
+                            type: 'pie',
+                            name: '各省区域数据占比',
+                            data: data
+                        }]
+                    });
+                })
+
+            }
+
 			//工具栏
 			var toolbar = [ {
 				id : 'button-edit',	
@@ -86,6 +107,11 @@
                 text : '导出',
                 iconCls : 'icon-redo',
                 handler:doExportExcel
+            }, {
+                id: 'button-export',
+                text: '生成图表',
+                iconCls: 'icon-redo',
+                handler: doExportChart
             }];
 			// 定义列
 			var columns = [ [ {
@@ -258,6 +284,12 @@
 				</form>
 			</div>
 		</div>
+
+        <!--饼状图-->
+        <div class="easyui-window" title="饼状图" closed="true" id="highchartsWindow" collapsible="false"
+             minimizable="false" maximizable="false" style="width: 400px; top:40px;left:200px">
+            <div id="container" style="min-width:400px;height:400px"></div>
+        </div>
 	</body>
 
 </html>

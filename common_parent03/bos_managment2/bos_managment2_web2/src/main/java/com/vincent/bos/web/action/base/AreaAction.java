@@ -216,4 +216,13 @@ hssfWorkbook.close();
 
   return NONE;
  }
+
+ @Action("areaAction_exportCharts")
+ public String areaAction_exportCharts() throws IOException {
+
+  List<Object[]> list = areaService.exportCharts();
+  listToJson(list, null);
+
+  return NONE;
+ }
 }

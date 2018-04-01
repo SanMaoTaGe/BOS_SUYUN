@@ -5,6 +5,8 @@ import com.vincent.bos.service.base.AreaService;
 import com.vincent.bos.web.action.CommonAction;
 import com.vincent.utils.FileDownloadEncodeNameUtils;
 import com.vincent.utils.PinYin4jUtils;
+import net.sf.jasperreports.engine.*;
+import net.sf.jasperreports.engine.export.JRPdfExporter;
 import net.sf.json.JsonConfig;
 import org.apache.commons.lang.StringUtils;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -23,16 +25,17 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 
+import javax.sql.DataSource;
+
 import javax.servlet.ServletContext;
 import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author Vincent
@@ -222,6 +225,39 @@ hssfWorkbook.close();
 
   List<Object[]> list = areaService.exportCharts();
   listToJson(list, null);
+
+  return NONE;
+ }
+
+ @Autowired
+ private DataSource dataSource;
+
+ @Action("areaAction_exportPDF")
+ public String areaAction_exportPDF() throws Exception {
+
+  // 读取 jrxml 文件
+  String jrxml = ServletActionContext.getServletContext().getRealPath("/jasper/report1.jrxml");
+  // 准备需要数据
+  Map<String, Object> parameters = new HashMap<String, Object>();
+  parameters.put("company", "传智播客");
+  // 准备需要数据
+  JasperReport report = JasperCompileManager.compileReport(jrxml);
+
+  JasperPrint jasperPrint = JasperFillManager.fillReport(report, parameters, dataSource.getConnection());
+
+  HttpServletResponse response = ServletActionContext.getResponse();
+  OutputStream ouputStream = response.getOutputStream();
+  // 设置相应参数，以附件形式保存PDF
+  response.setContentType("application/pdf");
+  response.setCharacterEncoding("UTF-8");
+  response.setHeader("Content-Disposition", "attachment; filename=" + FileDownloadEncodeNameUtils.encodeDownloadFilename("工作单.pdf",
+   ServletActionContext.getRequest().getHeader("user-agent")));
+  // 使用JRPdfExproter导出器导出pdf
+  JRPdfExporter exporter = new JRPdfExporter();
+  exporter.setParameter(JRExporterParameter.JASPER_PRINT, jasperPrint);
+  exporter.setParameter(JRExporterParameter.OUTPUT_STREAM, ouputStream);
+  exporter.exportReport();// 导出
+  ouputStream.close();// 关闭流
 
   return NONE;
  }

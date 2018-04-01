@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+              name="report1" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20"
+              rightMargin="20" topMargin="20" bottomMargin="20" uuid="8a618c4b-643c-421d-b5a0-354b4dc92bfe">
+    <property name="ireport.zoom" value="1.7715610000000013"/>
+    <property name="ireport.x" value="0"/>
+    <property name="ireport.y" value="0"/>
+    <parameter name="company" class="java.lang.String"/>
+    <queryString>
+        <![CDATA[select * from t_area]]>
+    </queryString>
+    <field name="C_ID" class="java.math.BigDecimal"/>
+    <field name="C_CITY" class="java.lang.String"/>
+    <field name="C_CITYCODE" class="java.lang.String"/>
+    <field name="C_DISTRICT" class="java.lang.String"/>
+    <field name="C_POSTCODE" class="java.lang.String"/>
+    <field name="C_PROVINCE" class="java.lang.String"/>
+    <field name="C_SHORTCODE" class="java.lang.String"/>
+    <variable name="C_PROVINCE_1" class="java.lang.Integer" resetType="Page" calculation="Count">
+        <variableExpression><![CDATA[$F{C_PROVINCE}]]></variableExpression>
+    </variable>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="79" splitType="Stretch">
+            <staticText>
+                <reportElement x="206" y="23" width="175" height="34" uuid="ada74616-a4ea-43f7-9185-70c43c3a6f81"/>
+                <textElement textAlignment="Center">
+                    <font fontName="宋体" size="24" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H"
+                          isPdfEmbedded="true"/>
+                </textElement>
+                <text><![CDATA[区域数据]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="392" y="59" width="100" height="20" uuid="743cdd81-2d49-4220-a9fa-07f030b3f750"/>
+                <textElement textAlignment="Center">
+                    <font fontName="宋体" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{company}]]></textFieldExpression>
+            </textField>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="48" splitType="Stretch">
+            <staticText>
+                <reportElement x="33" y="15" width="100" height="20" uuid="463c5a9b-99e9-4b56-aed1-3d941ccf5404"/>
+                <textElement textAlignment="Center">
+                    <font fontName="宋体" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+                </textElement>
+                <text><![CDATA[C_PROVINCE]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="206" y="15" width="100" height="20" uuid="b8e3362c-775b-432f-994e-999d88481e54"/>
+                <textElement textAlignment="Center">
+                    <font fontName="宋体" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+                </textElement>
+                <text><![CDATA[C_CITY]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="381" y="15" width="100" height="20" uuid="217baf0f-2972-4674-b4e0-5c07428f3e52"/>
+                <textElement textAlignment="Center">
+                    <font fontName="宋体" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+                </textElement>
+                <text><![CDATA[C_DISTRICT]]></text>
+            </staticText>
+        </band>
+    </pageHeader>
+    <detail>
+        <band height="34" splitType="Stretch">
+            <textField>
+                <reportElement x="33" y="6" width="100" height="20" uuid="7ba39627-6f24-4832-9280-f66380478b6e"/>
+                <textElement textAlignment="Center">
+                    <font fontName="宋体" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{C_PROVINCE}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="206" y="6" width="100" height="20" uuid="39c2cf4a-bb04-42fc-adbd-d1ef725dcb7c"/>
+                <textElement textAlignment="Center">
+                    <font fontName="宋体" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{C_CITY}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="381" y="6" width="100" height="20" uuid="4fa2263f-4324-481f-8c91-1d08ee446cc1"/>
+                <textElement textAlignment="Center">
+                    <font fontName="宋体" pdfFontName="STSong-Light" pdfEncoding="UniGB-UCS2-H" isPdfEmbedded="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{C_DISTRICT}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+</jasperReport>

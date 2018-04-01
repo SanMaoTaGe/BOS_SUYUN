@@ -45,6 +45,10 @@
                 window.location.href="../../areaAction_exportExcel.action"
             }
 
+            function doExportPDF() {
+                window.location.href = "../../areaAction_exportPDF.action"
+            }
+
             function doExportChart() {
                 $('#highchartsWindow').window("open")
                 //发起请求查询数据
@@ -112,6 +116,11 @@
                 text: '生成图表',
                 iconCls: 'icon-redo',
                 handler: doExportChart
+            }, {
+                id: 'button-export',
+                text: '生成PDF',
+                iconCls: 'icon-redo',
+                handler: doExportPDF
             }];
 			// 定义列
 			var columns = [ [ {

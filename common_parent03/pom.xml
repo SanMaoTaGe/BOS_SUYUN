@@ -316,9 +316,9 @@
             <version>2.1.7</version>
         </dependency>
         <dependency>
-            <groupId>com.itextpdf</groupId>
-            <artifactId>itext-asian</artifactId>
-            <version>5.2.0</version>
+            <groupId>com.Oracle</groupId>
+            <artifactId>iTextAsianNew</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <!-- groovy -->
